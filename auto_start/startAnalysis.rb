@@ -13,6 +13,7 @@ require 'asshaul.rb'
 require 'fileutils'
 require 'PipelineHelper.rb'
 require 'PathInfo'
+require 'ErrorHandler'
 
 # Class to automatically start the flowcells. It runs as part of a crontab job.
 # On detecting that a flowcell has copied, it starts the analysis automatically.
@@ -29,10 +30,15 @@ class AnalysisStarter
     baseDir = PipelineHelper.getInstrumentRootDir()
     puts "Root directory to look for new flowcells : " + baseDir
 
-    # Attempt to obtain the lock, if another instance of this program is
+    # ATTEmpt to obtain the lock, if another instance of this program is
     # running, this operation will fail. Print a suitable message and exit.
     if !@lock.try_to_lock
       puts "Another instance of this program is running. Exiting..."
+      obj = ErrorMessage.new()   #Added May 15, 2012. File system outage caused lock_startAnalysis.lock not to be deleted
+      obj.workingDir = Dir.pwd   #during @lock.unlock command at line 62. This prevented this script from running. Added email notification to team if reoccurs  
+      obj.msgBrief = "MAJOR Error in iPipeV2 - Must ACT for analysis to continue for ALL flowcells"
+      obj.msgDetail = "File " + File.dirname(__FILE__) + "/lock_startAnalysis.lock" + " must be deleted for the cronjob to work. The cronjob calls the script startAnalysis.rb. The cause is most likely  a file system outage. The script " + File.dirname(__FILE__) + "/startAnalysis.rb" + " does erase the .lock file, however a file system outage could prevent that from happening. If the .lock file exists then the pipleine assumes a cronjob instance is running at that exact moment and will not kick off another instance of startAnalysis.rb" 
+      ErrorHandler.handleError(obj)
       exit 0
     end
     buildInstrumentList(baseDir)
@@ -216,6 +222,10 @@ private
     puts output
     Dir::chdir(currDir)
   end
+
 end
+
+
+
 
 obj = AnalysisStarter.new()

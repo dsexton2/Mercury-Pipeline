@@ -80,8 +80,8 @@ class BclToFastQConvertor
 
     cmd = bclToFastQScript + " --input-dir " + @baseCallsDir + " --output-dir " + 
           outputDir + " --sample-sheet " + @sampleSheet + " --mismatches 1 " +
-          " --ignore-missing-stats --ignore-missing-bcl"
-
+          " --ignore-missing-stats --ignore-missing-bcl --with-failed-reads"
+      #Line 81 parameter --with-failed-reads reflects change of pipeline to CASAVA 1.8.2 on April 13 2012 - Mike
     if @useBaseMask != nil && !@useBaseMask.empty?()
       cmd = cmd + " --use-bases-mask " + @useBaseMask.to_s
     end

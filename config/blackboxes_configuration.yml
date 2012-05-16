@@ -1,0 +1,26 @@
+snpCaller:
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/SNPCaller"
+  code: "Atlas-SNP2.rb"
+  starter: "/hgsc_software/ruby/ruby-1.9.2/bin/ruby"
+snpAnnotator:
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/annotation_caller"
+  code: "SNPAnnotator.jar"
+  starter: "java -jar"
+  dbConfigFile: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/annotation_caller/annotationpipeline.config"
+snpAnnoToVCF:
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/annotation_caller"
+  code: "SNPAnnoToVCF.jar"
+  starter: "java -jar"
+indelCaller:
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/IndelCaller"
+  code: "Atlas-Indel2.rb"
+  starter: "/hgsc_software/ruby/ruby-1.9.2/bin/ruby"
+indelAnnotator:
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/annotation_caller"
+  code: "IndelAnnotator.jar"
+  starter: "java -jar"
+  dbConfigFile: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/annotation_caller/annotationpipeline.config"
+indelAnnoToVCF:
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/annotation_caller"
+  code: "IndelAnnoToVCF.jar"
+  starter: "java -jar"

@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<FCInfo Name="C0549ACXX" Numcycles="101+10" Type="paired">
+<LaneBarcodeList>
+<LaneBarcode Name="1-IDMB35"/>
+<LaneBarcode Name="1-IDMB48"/>
+<LaneBarcode Name="1-IDMB49"/>
+<LaneBarcode Name="1-IDMB44"/>
+<LaneBarcode Name="1-IDMB31"/>
+<LaneBarcode Name="1-IDMB67"/>
+<LaneBarcode Name="1-IDMB89"/>
+<LaneBarcode Name="1-IDMB78"/>
+<LaneBarcode Name="1-IDMB63"/>
+<LaneBarcode Name="1-IDMB74"/>
+<LaneBarcode Name="1-IDMB88"/>
+<LaneBarcode Name="1-IDMB80"/>
+<LaneBarcode Name="1-IDMB81"/>
+<LaneBarcode Name="1-IDMB41"/>
+<LaneBarcode Name="1-IDMB56"/>
+<LaneBarcode Name="1-IDMB36"/>
+<LaneBarcode Name="1-IDMB19"/>
+<LaneBarcode Name="1-IDMB43"/>
+<LaneBarcode Name="1-IDMB33"/>
+<LaneBarcode Name="1-IDMB46"/>
+<LaneBarcode Name="1-IDMB55"/>
+<LaneBarcode Name="1-IDMB18"/>
+<LaneBarcode Name="1-IDMB59"/>
+<LaneBarcode Name="1-IDMB30"/>
+<LaneBarcode Name="1-IDMB32"/>
+<LaneBarcode Name="1-IDMB40"/>
+<LaneBarcode Name="1-IDMB39"/>
+<LaneBarcode Name="1-IDMB51"/>
+<LaneBarcode Name="1-IDMB42"/>
+<LaneBarcode Name="1-IDMB58"/>
+<LaneBarcode Name="1-IDMB26"/>
+<LaneBarcode Name="1-IDMB85"/>
+<LaneBarcode Name="1-IDMB70"/>
+<LaneBarcode Name="1-IDMB76"/>
+<LaneBarcode Name="1-IDMB93"/>
+<LaneBarcode Name="1-IDMB96"/>
+<LaneBarcode Name="1-IDMB60"/>
+<LaneBarcode Name="1-IDMB62"/>
+<LaneBarcode Name="1-IDMB73"/>
+<LaneBarcode Name="1-IDMB69"/>
+<LaneBarcode Name="1-IDMB82"/>
+<LaneBarcode Name="1-IDMB68"/>
+<LaneBarcode Name="1-IDMB95"/>
+<LaneBarcode Name="1-IDMB91"/>
+<LaneBarcode Name="1-IDMB71"/>
+<LaneBarcode Name="1-IDMB64"/>
+<LaneBarcode Name="2-IDMB49"/>
+<LaneBarcode Name="2-IDMB88"/>
+<LaneBarcode Name="2-IDMB80"/>
+<LaneBarcode Name="2-IDMB81"/>
+<LaneBarcode Name="2-IDMB62"/>
+<LaneBarcode Name="2-IDMB73"/>
+<LaneBarcode Name="2-IDMB69"/>
+<LaneBarcode Name="2-IDMB82"/>
+<LaneBarcode Name="2-IDMB68"/>
+<LaneBarcode Name="2-IDMB95"/>
+<LaneBarcode Name="2-IDMB91"/>
+<LaneBarcode Name="2-IDMB71"/>
+<LaneBarcode Name="2-IDMB64"/>
+<LaneBarcode Name="2-IDMB44"/>
+<LaneBarcode Name="2-IDMB31"/>
+<LaneBarcode Name="2-IDMB30"/>
+<LaneBarcode Name="2-IDMB32"/>
+<LaneBarcode Name="2-IDMB40"/>
+<LaneBarcode Name="2-IDMB39"/>
+<LaneBarcode Name="2-IDMB51"/>
+<LaneBarcode Name="2-IDMB42"/>
+<LaneBarcode Name="2-IDMB58"/>
+<LaneBarcode Name="2-IDMB26"/>
+<LaneBarcode Name="2-IDMB85"/>
+<LaneBarcode Name="2-IDMB70"/>
+<LaneBarcode Name="2-IDMB67"/>
+<LaneBarcode Name="2-IDMB76"/>
+<LaneBarcode Name="2-IDMB89"/>
+<LaneBarcode Name="2-IDMB93"/>
+<LaneBarcode Name="2-IDMB78"/>
+<LaneBarcode Name="2-IDMB63"/>
+<LaneBarcode Name="2-IDMB84"/>
+<LaneBarcode Name="2-IDMB60"/>
+<LaneBarcode Name="2-IDMB74"/>
+<LaneBarcode Name="2-IDMB41"/>
+<LaneBarcode Name="2-IDMB56"/>
+<LaneBarcode Name="2-IDMB36"/>
+<LaneBarcode Name="2-IDMB19"/>
+<LaneBarcode Name="2-IDMB43"/>
+<LaneBarcode Name="2-IDMB47"/>
+<LaneBarcode Name="2-IDMB33"/>
+<LaneBarcode Name="2-IDMB46"/>
+<LaneBarcode Name="2-IDMB55"/>
+<LaneBarcode Name="2-IDMB18"/>
+<LaneBarcode Name="2-IDMB35"/>
+<LaneBarcode Name="2-IDMB48"/>
+<LaneBarcode Name="3-IDMB41"/>
+<LaneBarcode Name="3-IDMB56"/>
+<LaneBarcode Name="3-IDMB36"/>
+<LaneBarcode Name="3-IDMB19"/>
+<LaneBarcode Name="3-IDMB43"/>
+<LaneBarcode Name="3-IDMB33"/>
+<LaneBarcode Name="3-IDMB46"/>
+<LaneBarcode Name="3-IDMB55"/>
+<LaneBarcode Name="3-IDMB18"/>
+<LaneBarcode Name="3-IDMB35"/>
+<LaneBarcode Name="3-IDMB48"/>
+<LaneBarcode Name="3-IDMB49"/>
+<LaneBarcode Name="3-IDMB44"/>
+<LaneBarcode Name="3-IDMB31"/>
+<LaneBarcode Name="3-IDMB30"/>
+<LaneBarcode Name="3-IDMB32"/>
+<LaneBarcode Name="3-IDMB40"/>
+<LaneBarcode Name="3-IDMB39"/>
+<LaneBarcode Name="3-IDMB76"/>
+<LaneBarcode Name="3-IDMB73"/>
+<LaneBarcode Name="3-IDMB69"/>
+<LaneBarcode Name="3-IDMB82"/>
+<LaneBarcode Name="3-IDMB68"/>
+<LaneBarcode Name="3-IDMB95"/>
+<LaneBarcode Name="3-IDMB91"/>
+<LaneBarcode Name="3-IDMB71"/>
+<LaneBarcode Name="3-IDMB64"/>
+<LaneBarcode Name="3-IDMB47"/>
+<LaneBarcode Name="3-IDMB51"/>
+<LaneBarcode Name="3-IDMB42"/>
+<LaneBarcode Name="3-IDMB58"/>
+<LaneBarcode Name="3-IDMB26"/>
+<LaneBarcode Name="3-IDMB85"/>
+<LaneBarcode Name="3-IDMB70"/>
+<LaneBarcode Name="3-IDMB67"/>
+<LaneBarcode Name="3-IDMB89"/>
+<LaneBarcode Name="3-IDMB93"/>
+<LaneBarcode Name="3-IDMB78"/>
+<LaneBarcode Name="3-IDMB63"/>
+<LaneBarcode Name="3-IDMB84"/>
+<LaneBarcode Name="3-IDMB60"/>
+<LaneBarcode Name="3-IDMB74"/>
+<LaneBarcode Name="3-IDMB88"/>
+<LaneBarcode Name="3-IDMB80"/>
+<LaneBarcode Name="3-IDMB81"/>
+<LaneBarcode Name="3-IDMB62"/>
+<LaneBarcode Name="4-IDMB36"/>
+<LaneBarcode Name="4-IDMB85"/>
+<LaneBarcode Name="4-IDMB70"/>
+<LaneBarcode Name="4-IDMB67"/>
+<LaneBarcode Name="4-IDMB76"/>
+<LaneBarcode Name="4-IDMB89"/>
+<LaneBarcode Name="4-IDMB93"/>
+<LaneBarcode Name="4-IDMB78"/>
+<LaneBarcode Name="4-IDMB63"/>
+<LaneBarcode Name="4-IDMB96"/>
+<LaneBarcode Name="4-IDMB60"/>
+<LaneBarcode Name="4-IDMB74"/>
+<LaneBarcode Name="4-IDMB88"/>
+<LaneBarcode Name="4-IDMB81"/>
+<LaneBarcode Name="4-IDMB62"/>
+<LaneBarcode Name="4-IDMB73"/>
+<LaneBarcode Name="4-IDMB69"/>
+<LaneBarcode Name="4-IDMB82"/>
+<LaneBarcode Name="4-IDMB68"/>
+<LaneBarcode Name="4-IDMB95"/>
+<LaneBarcode Name="4-IDMB91"/>
+<LaneBarcode Name="4-IDMB71"/>
+<LaneBarcode Name="4-IDMB64"/>
+<LaneBarcode Name="4-IDMB41"/>
+<LaneBarcode Name="4-IDMB56"/>
+<LaneBarcode Name="4-IDMB19"/>
+<LaneBarcode Name="4-IDMB43"/>
+<LaneBarcode Name="4-IDMB33"/>
+<LaneBarcode Name="4-IDMB46"/>
+<LaneBarcode Name="4-IDMB55"/>
+<LaneBarcode Name="4-IDMB18"/>
+<LaneBarcode Name="4-IDMB35"/>
+<LaneBarcode Name="4-IDMB48"/>
+<LaneBarcode Name="4-IDMB49"/>
+<LaneBarcode Name="4-IDMB44"/>
+<LaneBarcode Name="4-IDMB31"/>
+<LaneBarcode Name="4-IDMB59"/>
+<LaneBarcode Name="4-IDMB30"/>
+<LaneBarcode Name="4-IDMB32"/>
+<LaneBarcode Name="4-IDMB40"/>
+<LaneBarcode Name="4-IDMB39"/>
+<LaneBarcode Name="4-IDMB51"/>
+<LaneBarcode Name="4-IDMB42"/>
+<LaneBarcode Name="4-IDMB58"/>
+<LaneBarcode Name="4-IDMB26"/>
+<LaneBarcode Name="4-IDMB80"/>
+<LaneBarcode Name="5-IDMB41"/>
+<LaneBarcode Name="5-IDMB56"/>
+<LaneBarcode Name="5-IDMB36"/>
+<LaneBarcode Name="5-IDMB19"/>
+<LaneBarcode Name="5-IDMB43"/>
+<LaneBarcode Name="5-IDMB47"/>
+<LaneBarcode Name="5-IDMB33"/>
+<LaneBarcode Name="5-IDMB46"/>
+<LaneBarcode Name="5-IDMB55"/>
+<LaneBarcode Name="5-IDMB18"/>
+<LaneBarcode Name="5-IDMB35"/>
+<LaneBarcode Name="5-IDMB48"/>
+<LaneBarcode Name="5-IDMB49"/>
+<LaneBarcode Name="5-IDMB44"/>
+<LaneBarcode Name="5-IDMB31"/>
+<LaneBarcode Name="5-IDMB30"/>
+<LaneBarcode Name="5-IDMB32"/>
+<LaneBarcode Name="5-IDMB40"/>
+<LaneBarcode Name="5-IDMB39"/>
+<LaneBarcode Name="5-IDMB51"/>
+<LaneBarcode Name="5-IDMB42"/>
+<LaneBarcode Name="5-IDMB58"/>
+<LaneBarcode Name="5-IDMB26"/>
+<LaneBarcode Name="5-IDMB85"/>
+<LaneBarcode Name="5-IDMB70"/>
+<LaneBarcode Name="5-IDMB67"/>
+<LaneBarcode Name="5-IDMB76"/>
+<LaneBarcode Name="5-IDMB89"/>
+<LaneBarcode Name="5-IDMB93"/>
+<LaneBarcode Name="5-IDMB78"/>
+<LaneBarcode Name="5-IDMB63"/>
+<LaneBarcode Name="5-IDMB84"/>
+<LaneBarcode Name="5-IDMB60"/>
+<LaneBarcode Name="5-IDMB74"/>
+<LaneBarcode Name="5-IDMB88"/>
+<LaneBarcode Name="5-IDMB80"/>
+<LaneBarcode Name="5-IDMB81"/>
+<LaneBarcode Name="5-IDMB62"/>
+<LaneBarcode Name="5-IDMB73"/>
+<LaneBarcode Name="5-IDMB69"/>
+<LaneBarcode Name="5-IDMB82"/>
+<LaneBarcode Name="5-IDMB68"/>
+<LaneBarcode Name="5-IDMB95"/>
+<LaneBarcode Name="5-IDMB91"/>
+<LaneBarcode Name="5-IDMB71"/>
+<LaneBarcode Name="5-IDMB64"/>
+<LaneBarcode Name="6-IDMB59"/>
+<LaneBarcode Name="6-IDMB41"/>
+<LaneBarcode Name="6-IDMB56"/>
+<LaneBarcode Name="6-IDMB36"/>
+<LaneBarcode Name="6-IDMB19"/>
+<LaneBarcode Name="6-IDMB43"/>
+<LaneBarcode Name="6-IDMB33"/>
+<LaneBarcode Name="6-IDMB46"/>
+<LaneBarcode Name="6-IDMB55"/>
+<LaneBarcode Name="6-IDMB18"/>
+<LaneBarcode Name="6-IDMB35"/>
+<LaneBarcode Name="6-IDMB48"/>
+<LaneBarcode Name="6-IDMB49"/>
+<LaneBarcode Name="6-IDMB44"/>
+<LaneBarcode Name="6-IDMB31"/>
+<LaneBarcode Name="6-IDMB30"/>
+<LaneBarcode Name="6-IDMB32"/>
+<LaneBarcode Name="6-IDMB40"/>
+<LaneBarcode Name="6-IDMB39"/>
+<LaneBarcode Name="6-IDMB51"/>
+<LaneBarcode Name="6-IDMB42"/>
+<LaneBarcode Name="6-IDMB58"/>
+<LaneBarcode Name="6-IDMB26"/>
+<LaneBarcode Name="6-IDMB85"/>
+<LaneBarcode Name="6-IDMB70"/>
+<LaneBarcode Name="6-IDMB67"/>
+<LaneBarcode Name="6-IDMB76"/>
+<LaneBarcode Name="6-IDMB89"/>
+<LaneBarcode Name="6-IDMB93"/>
+<LaneBarcode Name="6-IDMB78"/>
+<LaneBarcode Name="6-IDMB63"/>
+<LaneBarcode Name="6-IDMB96"/>
+<LaneBarcode Name="6-IDMB60"/>
+<LaneBarcode Name="6-IDMB74"/>
+<LaneBarcode Name="6-IDMB88"/>
+<LaneBarcode Name="6-IDMB80"/>
+<LaneBarcode Name="6-IDMB81"/>
+<LaneBarcode Name="6-IDMB62"/>
+<LaneBarcode Name="6-IDMB73"/>
+<LaneBarcode Name="6-IDMB69"/>
+<LaneBarcode Name="6-IDMB82"/>
+<LaneBarcode Name="6-IDMB68"/>
+<LaneBarcode Name="6-IDMB95"/>
+<LaneBarcode Name="6-IDMB91"/>
+<LaneBarcode Name="6-IDMB71"/>
+<LaneBarcode Name="6-IDMB64"/>
+<LaneBarcode Name="7-ID04"/>
+<LaneBarcode Name="7-ID10"/>
+<LaneBarcode Name="7-ID07"/>
+<LaneBarcode Name="7-ID01"/>
+<LaneBarcode Name="8-ID04"/>
+<LaneBarcode Name="8-ID10"/>
+<LaneBarcode Name="8-ID03"/>
+<LaneBarcode Name="8-ID09"/>
+</LaneBarcodeList>
+<LaneBarcodeInfo>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB35" Library="CILYNK.OP-361 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-361 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB48" Library="CILYNK.OP-469-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-469"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB49" Library="CILYNK.OP-472 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-472 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB44" Library="CILYNK.OP-610 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-610 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB31" Library="CILYNK.OP-335 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-335 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB67" Library="CILYNK.OP-589 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-589 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB89" Library="CILYNK.B36-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="B36"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB78" Library="CILYNK.F-658 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-658 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB63" Library="CILYNK.OP-578-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-578"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB74" Library="CILYNK.F-668 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-668 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB88" Library="CILYNK.OP-119-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-119"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB80" Library="CILYNK.KK015-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="KK015-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB81" Library="CILYNK.OP-118-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-118"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB41" Library="CILYNK.OP-400 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-400 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB56" Library="CILYNK.OP-478 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-478 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB36" Library="CILYNK.OP-376 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-376 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB19" Library="CILYNK.OP-208 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-208 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB43" Library="CILYNK.OP-416 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-416 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB33" Library="CILYNK.OP-359 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-359 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB46" Library="CILYNK.OP-453 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-453 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB55" Library="CILYNK.OP-477 II4-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-477 II4"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB18" Library="CILYNK.OP-184-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-184"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB59" Library="CILYNK.OP-516-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-516"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB30" Library="CILYNK.OP-307 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-307 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB32" Library="CILYNK.OP-338 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-338 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB40" Library="CILYNK.OP-379-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-379"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB39" Library="CILYNK.OP-378 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-378 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB51" Library="CILYNK.OP-475 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-475 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB42" Library="CILYNK.OP-415 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-415 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB58" Library="CILYNK.OP-499 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-499 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB26" Library="CILYNK.OP-266 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-266 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB85" Library="CILYNK.OP-31 II-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-31 II"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB70" Library="CILYNK.OP-602 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-602 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB76" Library="CILYNK.F-661 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-661 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB93" Library="CILYNK.OP-54 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-54 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB96" Library="CILYNK.OP-91 II4-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-91 II4"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB60" Library="CILYNK.OP-792 II5-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-792 II5"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB62" Library="CILYNK.OP-574 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-574 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB73" Library="CILYNK.F-718 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-718 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB69" Library="CILYNK.OP-596 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-596 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB82" Library="CILYNK.OP-9 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-9 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB68" Library="CILYNK.OP-593 II3-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-593 II3"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB95" Library="CILYNK.OP-80 II4-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-80 II4"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB91" Library="CILYNK.OP-51 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-51 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB71" Library="CILYNK.F-758 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-758 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="1-IDMB64" Library="CILYNK.OP-585 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-585 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB49" Library="CILYNK.F-696 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-696 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB88" Library="CILYNK.OP-103 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-103 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB80" Library="CILYNK.OP-55 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-55 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB81" Library="CILYNK.OP-61 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-61 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB62" Library="CILYNK.OP-5 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-5 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB73" Library="CILYNK.OP-27 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-27 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB69" Library="CILYNK.OP-17 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-17 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB82" Library="CILYNK.OP-86 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-86 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB68" Library="CILYNK.OP-14 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-14 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB95" Library="CILYNK.OP-168 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-168 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB91" Library="CILYNK.OP-109 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-109 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB71" Library="CILYNK.OP-23 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-23 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB64" Library="CILYNK.OP-10 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-10 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB44" Library="CILYNK.OS-236 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-236 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB31" Library="CILYNK.OS 93-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS 93"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB30" Library="CILYNK.OS 64 II-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS 64 II"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB32" Library="CILYNK.OS-143II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-143II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB40" Library="CILYNK.OS-206-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-206"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB39" Library="CILYNK.OS-131-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-131"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB51" Library="CILYNK.F-678 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-678 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB42" Library="CILYNK.OP-173-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-173"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB58" Library="CILYNK.F-651 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-651 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB26" Library="CILYNK.OS-54 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-54 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB85" Library="CILYNK.OP-94 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-94 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB70" Library="CILYNK.OP-21 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-21 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB67" Library="CILYNK.OP-11 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-11 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB76" Library="CILYNK.OP-37 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-37 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB89" Library="CILYNK.OP-104 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-104 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB93" Library="CILYNK.OP-142-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-142"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB78" Library="CILYNK.OP-44  II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-44  II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB63" Library="CILYNK.OP-6 II5-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-6 II5"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB84" Library="CILYNK.OP-90 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-90 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB60" Library="CILYNK.F-630 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-630 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB74" Library="CILYNK.OP-28 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-28 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB41" Library="CILYNK.OS-223-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-223"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB56" Library="CILYNK.F-670 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-670 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB36" Library="CILYNK.OS-109-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-109"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB19" Library="CILYNK.OS-51 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-51 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB43" Library="CILYNK.OS-235 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-235 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB47" Library="CILYNK.F-895 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-895 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB33" Library="CILYNK.OP-63II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OP-63II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB46" Library="CILYNK.ON-91-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="ON-91"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB55" Library="CILYNK.F-671 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-671 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB18" Library="CILYNK.OS-23 II1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-23 II1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB35" Library="CILYNK.OS-106-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OS-106"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="2-IDMB48" Library="CILYNK.F-710 II2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F-710 II2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB41" Library="CILYNK.OFD-066-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_066"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB56" Library="CILYNK.OFD-094-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_094"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB36" Library="CILYNK.OFD-051-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_051"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB19" Library="CILYNK.OFD-009-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_009"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB43" Library="CILYNK.OFD-068-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_068"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB33" Library="CILYNK.OFD-030-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_030"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB46" Library="CILYNK.OFD-072-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_072"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB55" Library="CILYNK.OFD-093-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_093"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB18" Library="CILYNK.OFD-004-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_004"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB35" Library="CILYNK.OFD-040-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_040"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB48" Library="CILYNK.B113-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="B113"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB49" Library="CILYNK.OFD-082-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_082"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB44" Library="CILYNK.OFD-071-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_071"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB31" Library="CILYNK.bTM-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="bTM"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB30" Library="CILYNK.OFD-013-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_013"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB32" Library="CILYNK.TR-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="TR"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB40" Library="CILYNK.OFD-065-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_065"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB39" Library="CILYNK.OFD-064-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_064"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB76" Library="CILYNK.OFD-154-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_154"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB73" Library="CILYNK.OFD-151-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_151"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB69" Library="CILYNK.OFD-145-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_145"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB82" Library="CILYNK.OFD-160-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_160"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB68" Library="CILYNK.OFD-140-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_140"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB95" Library="CILYNK.OFD-175-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_175"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB91" Library="CILYNK.OFD-172-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_172"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB71" Library="CILYNK.OFD-147-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_147"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB64" Library="CILYNK.OFD-133-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_133"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB47" Library="CILYNK.OFD-074-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_074"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB51" Library="CILYNK.OFD-084-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_084"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB42" Library="CILYNK.OFD-067-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_067"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB58" Library="CILYNK.OFD-101-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_101"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB26" Library="CILYNK.OFD-012-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_012"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB85" Library="CILYNK.OFD-167-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_167"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB70" Library="CILYNK.OFD-146-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_146"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB67" Library="CILYNK.OFD-134-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_134"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB89" Library="CILYNK.OFD-171-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_171"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB93" Library="CILYNK.OFD-173-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_173"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB78" Library="CILYNK.OFD-155-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_155"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB63" Library="CILYNK.OFD-128-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_128"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB84" Library="CILYNK.OFD-161-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_161"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB60" Library="CILYNK.OFD-124-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_124"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB74" Library="CILYNK.OFD-152-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_152"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB88" Library="CILYNK.OFD-170-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_170"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB80" Library="CILYNK.OFD-158-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_158"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB81" Library="CILYNK.OFD-159-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_159"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="3-IDMB62" Library="CILYNK.OFD-127-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_127"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB36" Library="CILYNK.NIJ-20378-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20378"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB85" Library="CILYNK.200418023-16_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200418023-16"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB70" Library="CILYNK.NIJ-29676-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-29676"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB67" Library="CILYNK.NIJ-28574-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-28574"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB76" Library="CILYNK.200400350-06_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200400350-06"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB89" Library="CILYNK.B114-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="B114"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB93" Library="CILYNK.200421342-18_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200421342-18"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB78" Library="CILYNK.200403143-11_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200403143-11"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB63" Library="CILYNK.NIJ-21023-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-21023"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB96" Library="CILYNK.B66F2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="B66F2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB60" Library="CILYNK.NIJ-20892-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20892"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB74" Library="CILYNK.200309590-22_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200309590-22"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB88" Library="CILYNK.200418055-22_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200418055-22"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB81" Library="CILYNK.200404770-16_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200404770-16"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB62" Library="CILYNK.NIJ-20968-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20968"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB73" Library="CILYNK.A1000768-10_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="A1000768-10"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB69" Library="CILYNK.NIJ-29660-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-29660"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB82" Library="CILYNK.200410693-49_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200410693-49"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB68" Library="CILYNK.NIJ-29656-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-29656"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB95" Library="CILYNK.B144-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="B144"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB91" Library="CILYNK.200421128-17_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200421128-17"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB71" Library="CILYNK.NIJ-42977-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-42977"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB64" Library="CILYNK.NIJ-28566-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-28566"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB41" Library="CILYNK.NIJ-20498-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20498"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB56" Library="CILYNK.NIJ-20841-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20841"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB19" Library="CILYNK.OFD-181-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_181"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB43" Library="CILYNK.NIJ-20548-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20548"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB33" Library="CILYNK.NIJ-18842-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-18842"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB46" Library="CILYNK.NIJ-20631-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20631"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB55" Library="CILYNK.NIJ-20836-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20836"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB18" Library="CILYNK.OFD-178-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_178"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB35" Library="CILYNK.NIJ-20373-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20373"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB48" Library="CILYNK.NIJ-20670-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20670"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB49" Library="CILYNK.NIJ-20707-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20707"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB44" Library="CILYNK.NIJ-20567-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20567"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB31" Library="CILYNK.NIJ-14075-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-14075"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB59" Library="CILYNK.NIJ-20889-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20889"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB30" Library="CILYNK.NIJ-10003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-10003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB32" Library="CILYNK.NIJ-14079-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-14079"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB40" Library="CILYNK.NIJ-20471-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20471"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB39" Library="CILYNK.NIJ-20469-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20469"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB51" Library="CILYNK.NIJ-20714-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20714"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB42" Library="CILYNK.NIJ-20521-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20521"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB58" Library="CILYNK.NIJ-20846-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="NIJ-20846"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB26" Library="CILYNK.OFD-183-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="OFD_183"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="4-IDMB80" Library="CILYNK.200404769-19_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="200404769-19"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB41" Library="CILYNK.MKS4-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="MKS4"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB56" Library="CILYNK.AR244-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR244-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB36" Library="CILYNK.AR045-05-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR045-05"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB19" Library="CILYNK.44-3-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="44-3"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB43" Library="CILYNK.AR198-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR198-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB47" Library="CILYNK.AR232-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR232-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB33" Library="CILYNK.AR003-05-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR003-05"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB46" Library="CILYNK.AR231-02-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR231-02"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB55" Library="CILYNK.AR243-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR243-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB18" Library="CILYNK.32-3-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="32-3"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB35" Library="CILYNK.AR037-07-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR037-07"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB48" Library="CILYNK.AR234-02-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR234-02"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB49" Library="CILYNK.AR236-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR236-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB44" Library="CILYNK.AR201-06-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR201-06"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB31" Library="CILYNK.KK047-05-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="KK047-05"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB30" Library="CILYNK.F1-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="F1-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB32" Library="CILYNK.I2220B-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="I2220B"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB40" Library="CILYNK.AR112-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR112-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB39" Library="CILYNK.AR075-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR075-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB51" Library="CILYNK.AR240-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR240-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB42" Library="CILYNK.AR124-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR124-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB58" Library="CILYNK.AR245-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR245-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB26" Library="CILYNK.53-II-3-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="53-II-3"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB85" Library="CILYNK.AR400-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR400-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB70" Library="CILYNK.AR333-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR333-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB67" Library="CILYNK.AR316-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR316-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB76" Library="CILYNK.AR365-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR365-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB89" Library="CILYNK.AR596-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR596-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB93" Library="CILYNK.AR605-05-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR605-05"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB78" Library="CILYNK.AR372-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR372-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB63" Library="CILYNK.AR301-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR301-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB84" Library="CILYNK.AR386-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR386-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB60" Library="CILYNK.AR249-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR249-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB74" Library="CILYNK.AR349-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR349-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB88" Library="CILYNK.AR433-05-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR433-05"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB80" Library="CILYNK.AR380-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR380-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB81" Library="CILYNK.AR381-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR381-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB62" Library="CILYNK.AR291-05-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR291-05"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB73" Library="CILYNK.AR348-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR348-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB69" Library="CILYNK.AR332-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR332-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB82" Library="CILYNK.AR385-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR385-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB68" Library="CILYNK.AR323-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR323-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB95" Library="CILYNK.AR634-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR634-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB91" Library="CILYNK.AR603-05-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR603-05"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB71" Library="CILYNK.AR347-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR347-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="5-IDMB64" Library="CILYNK.MKS3-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="MKS3"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB59" Library="CILYNK.AR896-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR896-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB41" Library="CILYNK.AR829-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR829-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB56" Library="CILYNK.AR884-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR884-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB36" Library="CILYNK.AR799-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR799-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB19" Library="CILYNK.MKS2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="MKS2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB43" Library="CILYNK.AR838-02-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR838-02"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB33" Library="CILYNK.AR786-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR786-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB46" Library="CILYNK.AR840-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR840-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB55" Library="CILYNK.AR883-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR883-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB18" Library="CILYNK.AR704-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR704-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB35" Library="CILYNK.AR796-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR796-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB48" Library="CILYNK.AR873-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR873-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB49" Library="CILYNK.AR879-05-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR879-05"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB44" Library="CILYNK.AR839-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR839-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB31" Library="CILYNK.AR752-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR752-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB30" Library="CILYNK.AR736-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR736-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB32" Library="CILYNK.AR758-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR758-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB40" Library="CILYNK.AR811-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR811-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB39" Library="CILYNK.AR800-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR800-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB51" Library="CILYNK.AR880-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR880-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB42" Library="CILYNK.AR831-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR831-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB58" Library="CILYNK.AR888-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="AR888-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB26" Library="CILYNK.MKS1-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="MKS1"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB85" Library="CILYNK.DM036-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM036-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB70" Library="CILYNK.DM009-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM009-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB67" Library="CILYNK.DM006-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM006-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB76" Library="CILYNK.DM015-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM015-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB89" Library="CILYNK.DM038-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM038-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB93" Library="CILYNK.KK011-04-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="KK011-04"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB78" Library="CILYNK.DM029-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM029-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB63" Library="CILYNK.DM004-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM004-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB96" Library="CILYNK.JS2-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="JS2"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB60" Library="CILYNK.DM002-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM002-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB74" Library="CILYNK.DM014-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM014-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB88" Library="CILYNK.DM037-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM037-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB80" Library="CILYNK.DM032-004-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM032-004"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB81" Library="CILYNK.DM033-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM033-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB62" Library="CILYNK.DM003-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM003-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB73" Library="CILYNK.DM012-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM012-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB69" Library="CILYNK.DM008-001-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM008-001"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB82" Library="CILYNK.DM034-004-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM034-004"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB68" Library="CILYNK.DM007-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM007-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB95" Library="CILYNK.JS3-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="JS3"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB91" Library="CILYNK.KK007-03-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="KK007-03"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB71" Library="CILYNK.DM010-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM010-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/ciliary_hg19" ID="6-IDMB64" Library="CILYNK.DM005-003-1_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="DM005-003"/>
+<LaneBarcode ChipDesign="/users/p-illumina/vcrome2.1" ID="7-ID04" Library="CHXAEB.CEA6023282-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="CEA6023282"/>
+<LaneBarcode ChipDesign="/users/p-illumina/vcrome2.1" ID="7-ID10" Library="CHXAEB.CEA3500730-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="CEA3500730"/>
+<LaneBarcode ChipDesign="/users/p-illumina/vcrome2.1" ID="7-ID07" Library="CHXAEB.CEA5008662-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="CEA5008662"/>
+<LaneBarcode ChipDesign="/users/p-illumina/vcrome2.1" ID="7-ID01" Library="CHXAEB.CEA6004148-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="CEA6004148"/>
+<LaneBarcode ChipDesign="/users/p-illumina/vcrome2.1" ID="8-ID04" Library="CHXAEB.CEA4502833-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="CEA4502833"/>
+<LaneBarcode ChipDesign="/users/p-illumina/vcrome2.1" ID="8-ID10" Library="CHXAEB.CEA6028411-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="CEA6028411"/>
+<LaneBarcode ChipDesign="/users/p-illumina/vcrome2.1" ID="8-ID03" Library="CHXAEB.CEA5009650-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="CEA5009650"/>
+<LaneBarcode ChipDesign="/users/p-illumina/vcrome2.1" ID="8-ID09" Library="CHXAEB.CEA4015827-2_1AMP" ReferencePath="/stornext/snfs5/next-gen/Illumina/bwa_references/h/hg19/original/hg19.fa" Sample="CEA4015827"/>
+</LaneBarcodeInfo>
+</FCInfo>

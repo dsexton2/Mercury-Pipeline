@@ -3,12 +3,15 @@
 $:.unshift File.join(File.dirname(__FILE__), ".", "..", "lib")
 
 require 'PathInfo'
+require 'BWAParams'
 
 # Script to perform cleanup after alignment is complete.
 # Author: Nirav Shah niravs@bcm.edu
 class PostAlignmentProcess
   def initialize()
+    getFlowcellBarcode()
     uploadResultsToLIMS()
+    bwaStatsUpload()
     emailAnalysisResults()
     cleanIntermediateFiles()
     runSNPCaller()
@@ -17,12 +20,43 @@ class PostAlignmentProcess
 
   private
   
+  #Method to read config file and obtain flowcell barcode
+  def getFlowcellBarcode()
+    @fcBarcode = nil
+
+    inputParams = BWAParams.new()
+    inputParams.loadFromFile()
+    @fcBarcode  = inputParams.getFCBarcode() # Lane barcode FCName-Lane-BarcodeName
+
+    if @fcBarcode == nil || @fcBarcode.empty?()
+      raise "Did not obtain flowcell barcode in directory : " + Dir.pwd
+    end
+  end
+ 
   # Method to upload the alignment results to LIMS
   def uploadResultsToLIMS()
     uploadCmd = "ruby " + PathInfo::WRAPPER_DIR + 
                 "/ResultUploader.rb ANALYSIS_FINISHED"
     output    = `#{uploadCmd}`
     puts output
+  end
+  
+  #  #Push BWA Stats results to LIMS
+    
+  def bwaStatsUpload()
+    resultFile = "BWA_Map_Stats.txt"
+      
+    if !File::exist?(resultFile)
+      raise "Did not find " + resultFile + ", can't upload BWA results to LIMS"
+    end
+      
+      limsScript = PathInfo::LIMS_API_DIR + "/uploadBAMAnalyzerFile.pl"
+      
+      limsUploadCmd = "perl " + limsScript + " " + @fcBarcode + " BWA_Map_Stats.txt"
+      
+      puts limsUploadCmd
+      output = `#{limsUploadCmd}`
+      puts "Output from LIMS upload command : " + output.to_s
   end
 
   # Method to email analysis results

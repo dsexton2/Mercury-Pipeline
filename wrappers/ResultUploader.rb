@@ -53,7 +53,7 @@ class LaneResult
                " PERCENT_PF_READS " + @percentPFReads.to_s +
                " FIRST_CYCLE_INT_PF " + @firstCycleInt.to_s + 
                " PERCENT_INTENSITY_AFTER_20_CYCLES_PF " + @percentIntAfter20.to_s +
-               " PIPELINE_VERSION casava1.8"
+               " PIPELINE_VERSION casava1.8.2"     #Pipeline changed to CASAVA 1.8.2 on April 13 2012 - Mike
 
       if @readType.to_s.eql?("1")
         result = result + " LANE_YIELD_MBASES " + @yield.to_s + " RAW_READS " +
@@ -61,14 +61,15 @@ class LaneResult
                  " PERCENT_PERFECT_INDEX " + @percentPerfectIndex.to_s + 
                  " PERCENT_1MISMATCH_INDEX " + @percent1MismatchIndex.to_s +
                  " PERCENT_Q30_BASES " + @percentQ30Bases.to_s +
-                 " MEAN_QUAL_SCORE " + @meanQualScore.to_s
+                 " MEAN_QUAL_SCORE " + @meanQualScore.to_s +
+	         " LANE_UNDETERMINED_INDICES " + @laneUndeterminedIndices.to_s + " LANE_UNDETERMINED_INDICES_PECENT_PF " + @laneUndeterminedIndices_PERCENT_PF.to_s  #Added April 27, 2012
       end
     else
       # the stage is ANALYSIS_FINISHED
       result = @fcBarcode + " ANALYSIS_FINISHED READ " + @readType.to_s +
                " PERCENT_ALIGN_PF " + @percentAligned.to_s + 
                " PERCENT_ERROR_RATE_PF " + @percentError.to_s +
-               " PIPELINE_VERSION casava1.8"
+               " PIPELINE_VERSION casava1.8.2"    #Pipeline changed to CASAVA 1.8.2 on April 13 2012 - Mike
 
       if @readType.to_s.eql?("1")
         result = result + " RESULTS_PATH " + FileUtils.pwd +
@@ -171,6 +172,20 @@ class LaneResult
         @percent1MismatchIndex = dataElements[12].inner_html
         @percentQ30Bases       = dataElements[13].inner_html
         @meanQualScore         = dataElements[14].inner_html
+      end
+      #Added April 27, 2012 - Start to parse undetermined indicies for lane
+      laneNumber = @fcBarcode.slice(/-\d/) 
+      laneNumber.gsub!(/^-/, "")  
+      id3 = "Undetermined" 
+      if dataElements[0].inner_html.eql?(laneNumber) && dataElements[3].inner_html.eql?(id3)
+	  @laneUndeterminedIndices = dataElements[9].inner_html
+	  if @laneUndeterminedIndices != nil
+	     @laneUndeterminedIndices.gsub!(/,/, "")
+	     @laneUndeterminedIndices_PERCENT_PF = dataElements[8].inner_html
+	  end
+      elsif @laneUndeterminedIndices == nil
+	  @laneUndeterminedIndices = 0
+	  @laneUndeterminedIndices_PERCENT_PF = 0
       end
     end
   end

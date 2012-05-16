@@ -1,0 +1,5 @@
+# File having list of email recepients
+
+EMAIL_RESULTS=yhan@bcm.edu,jgreid@bcm.edu,cbuhay@bcm.edu,ahawes@bcm.edu,zkhan@bcm.edu,dsexton@bcm.edu
+EMAIL_CAPTURE=jgreid@bcm.edu,cbuhay@bcm.edu,ahawes@bcm.edu,zkhan@bcm.edu,dsexton@bcm.edu
+EMAIL_ERRORS=dsexton@bcm.edu,zkhan@bcm.edu,ahawes@bcm.edu,dsexton@bcm.edu,dahdouli@bcm.edu

@@ -1,0 +1,19 @@
+<project name="AttachmentMailer">
+
+  <path id="classpath">
+    <fileset dir="./" includes="mail.jar"/>
+  </path>
+
+  <target name="compile">
+    <javac srcdir="./" destdir="./" classpathref="./mail.jar"/>
+  </target>
+
+  <target name="jar">
+   <jar destfile="../AttachmentMailer.jar" basedir="./">
+      <manifest>
+         <attribute name="Main-Class" value="tools.AttachmentMailer"/>
+      </manifest>
+   </jar>
+  </target>
+
+</project>

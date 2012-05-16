@@ -1,0 +1,1 @@
+DO NOT delete mail.jar or else AttachmentMailer.jar will not work.

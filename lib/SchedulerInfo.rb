@@ -6,4 +6,5 @@
 module SchedulerInfo
   DEFAULT_QUEUE = "normal"    # Default queue name
   CASAVA_QUEUE  = "high"      # Queue name for casava tools
+	ANNOTATION_QUEUE = "anno"   # Queue name for running annotations
 end

@@ -72,31 +72,8 @@ class CleanFlowcell
     puts "BaseCalls directory cleaned"
 #    cleanDemultiplexedDirs()
   end
-
-  # Commenting out this function because "Demultiplexed" directory is not
-  # present in CASAVA 1.8 flowcells.
-=begin
-  def cleanDemultiplexedDirs()
-    demuxDirPath = "./Data/Intensities/BaseCalls/Demultiplexed"
-    if File::directory?(demuxDirPath)
-      puts "Cleaning qseq files under Demultiplexed directories"
-    
-      dirEntries = Dir.entries(demuxDirPath)
-
-      dirEntries.each do |dirEntry|
-        puts dirEntry.to_s
-        if File::directory?(demuxDirPath + "/" + dirEntry) &&
-           (dirEntry.to_s.match(/\d\d\d/) || dirEntry.to_s.match(/unknown/))
-
-           rmQseqFilesCmd = "rm " + demuxDirPath + "/" + dirEntry.to_s + "/*_qseq.txt"
-           output = `#{rmQseqFilesCmd}`
-        end
-      end
-    end
-    puts "Cleaned qseq files under Demultiplexed directories"
-  end
 end
-=end
+
 
 listFile = ARGV[0]
 

@@ -17,8 +17,11 @@ scheduler:
     hptest:
       maxCores: 16
       maxMemory: 28000
+    anno:
+      maxCores: 1
+      maxMemory: 4000
 casava:
-  bclToFastqPath: "/stornext/snfs5/next-gen/Illumina/GAPipeline/CASAVA1_8/CASAVA1_8-Install/bin/configureBclToFastq.pl"
+  bclToFastqPath: "/hgsc_software/casava/CASAVA_v1.8.2/bin/configureBclToFastq.pl"
 captureStats:
   codeDirectory: "/stornext/snfs5/next-gen/software/hgsc/capture_stats"
   captureCode: "CaptureStatsBAM5"

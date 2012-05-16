@@ -104,7 +104,7 @@ class SequenceAnalyzerWrapper
 
     limsUploadCmd = "perl " + limsScript + " " + @fcBarcode + 
                     " UNIQUE_PERCENT_FINISHED UNIQUE_PERCENT " + uniquePercent.to_s +
-                    " PIPELINE_VERSION casava1.8"
+                    " PIPELINE_VERSION casava1.8.2"   #Pipeline changed to CASAVA 1.8.2 on April 13 2012 - Mike
     puts limsUploadCmd
     output = `#{limsUploadCmd}`
     puts "Output from LIMS upload command : " + output.to_s
