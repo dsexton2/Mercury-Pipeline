@@ -1,2 +1,0 @@
-/stornext/snfs0/next-gen/Illumina/Instruments/7001133/120405_SN1133_0133_AD0UFTACXX/Results/Project_120405_SN1133_0133_AD0UFTACXX/Sample_D0UFTACXX-8
-/stornext/snfs0/next-gen/Illumina/Instruments/700805/120104_SN805_0141_AD0KYGACXX/Results/Project_120104_SN805_0141_AD0KYGACXX/Sample_D0KYGACXX-3

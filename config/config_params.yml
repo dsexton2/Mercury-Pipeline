@@ -29,3 +29,7 @@ sequencers:
   rootDir: "/stornext/snfs0/next-gen/Illumina/Instruments"
 lims:
   databaseName: "HGSC"
+generateVCF:
+  gatkPath: "/hgsc_software/gatk/gatk-1.6.2/GenomeAnalysisTK.jar"
+  dbSnpPath: "/users/jy2/workspace/reference/phase2/mapping_resources/ALL.wgs.dbsnp.build135.snps.sites.vcf.gz"
+  samtoolsPath: "/stornext/snfs5/next-gen/software/samtools-0.1.7/samtools"
