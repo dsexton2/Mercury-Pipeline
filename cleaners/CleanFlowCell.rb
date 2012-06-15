@@ -30,7 +30,11 @@ class CleanFlowcell
           puts "Cleaning Thumbnail images"
           cleanThumbnailDir()
         end
-        puts "Completed cleaning " + fcName
+        
+	puts "Cleaning casava_fastq directories in each sample folder."
+	cleanCasavaFastq()
+		
+	puts "Completed cleaning " + fcName
         puts ""
         Dir.chdir(pwd)
  #     end
@@ -72,6 +76,14 @@ class CleanFlowcell
     puts "BaseCalls directory cleaned"
 #    cleanDemultiplexedDirs()
   end
+ 
+  def cleanCasavaFastq()
+    cmd = "find ./Results/Project* -type d -name casava_fastq -exec rm -rf {} \\;"
+    puts "Running command: " + cmd 
+    output = `#{cmd}`
+    puts output
+  end
+
 end
 
 

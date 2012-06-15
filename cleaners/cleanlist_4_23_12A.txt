@@ -1,4 +1,0 @@
-/stornext/snfs0/next-gen/Illumina/Instruments/700166/120217_SN166_0325_AD0NH8ACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700142/120220_SN142_0446_AD0RLLACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700142/120308_SN142_0452_BD0RLAACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700805/120315_SN805_0181_AD0TM8ACXX

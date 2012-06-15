@@ -35,6 +35,13 @@ class PipelineHelper
   # LIMS.
   def self.getFCBarcodeName(fcName, laneBarcode)
     limsFCName = formatFlowcellNameForLIMS(fcName)
+    # MiSeq depends on cartridge ID and not flowcell ID. Pipeline can use cartridge ID
+    # but needs to be parsed correctly. MiSeq instruments cartridge ID and run folders
+    # have suffix ID 00300 but in LIMS suffix is stored as 300 in flowcell ID. Following code removes 2 zeros 
+    # The 300 represents 150x2 bp Illumina kits to bring 300 bp reads. This can change in future, code is already flexible for this.
+    if limsFCName.match(/-[0]+\d[0]+/)
+       limsFCName.gsub!(/-00/, "-")
+    end 
     fcBarcode  = limsFCName + "-" + laneBarcode.to_s
     return fcBarcode
   end

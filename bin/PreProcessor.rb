@@ -109,8 +109,19 @@ class PreProcessor
     outLog     = @baseCallsDir + "/fcPlanDownloader.o"
     errLog     = @baseCallsDir + "/fcPlanDownloader.e"
 
+    # MiSeq depends on cartridge ID and not flowcell ID. Pipeline can use cartridge ID
+    # but needs to be parsed correctly. MiSeq instruments cartridge ID and run folders
+    # have suffix ID 00300 but in LIMS suffix is stored as 300 as flowcell ID. Following code removes 2 zeros 
+    # This code snippet was not placed in PipelineHelper.formatFlowcellNameForLIMS as many other scripts rely on it.
+    # It is only in PreProcessor.rb that we have to address this. The rest of pipeline calls PipelineHelper.formatFlowcellNameForLIMS
+    # in its native form and works well.
+    limsFCName = PipelineHelper.formatFlowcellNameForLIMS(@fcName)
+    if limsFCName.match(/[a-zA-Z0-9]+-00[0-9]+/)
+       limsFCName.gsub!(/-00/, "-")
+    end 
+
     cmd = "java -jar " + PathInfo::LIMS_API_DIR + "/FlowcellPlanDownloader.jar" +
-          " " + LimsInfo::LIMS_DB_NAME + " " + PipelineHelper.formatFlowcellNameForLIMS(@fcName) +
+          " " + LimsInfo::LIMS_DB_NAME + " " + limsFCName +
           " " + outputFile + " 1>" + outLog + " 2>" + errLog
     puts "Executing command to download flowcell plan"
     output = `#{cmd}`
@@ -119,12 +130,21 @@ class PreProcessor
     if !File::exist?(outputFile) || (returnCode != 0)
       raise outputFile + " not created"
     end
+
+    if outputFile.match(/\d{3}-\d/)                    #Retreived MiSeq barcodes from LIMS contains cartridge ID. This throws off building of barcode_definition.txt
+	removeMiseqCartridge = File.read(outputFile)   #Cartridge ID is removed so barcode ID is similar to HiSeq in order to build SampleSheet successfully
+	replace = removeMiseqCartridge.gsub(/\d{3}\-/, '')
+	File.open(outputFile, "w") { |file| file.puts replace }
+    end
+
   end  
 
   # Helper method to upload analysis start date to LIMS for tracking purposes
   def uploadAnalysisStartDate()
     fcNameForLIMS = PipelineHelper.formatFlowcellNameForLIMS(@fcName)
-
+    if fcNameForLIMS.match(/-[0]+\d[0]+/)         #For MiSeq
+      fcNameForLIMS.gsub!(/-00/, "-")
+    end 
     limsScript = PathInfo::LIMS_API_DIR + "/setFlowCellAnalysisStartDate.pl"
 
     uploadCmd = "perl " + limsScript + " " + fcNameForLIMS
@@ -165,6 +185,11 @@ class PreProcessor
       fcBarcode = formattedFCName + "-" +           # Flowcell name in LIMS
                   laneBC.to_s
 
+      if fcBarcode.match(/-[0]+\d[0]+/)         #For MiSeq
+        fcBarcode.gsub!(/-00/, "-")
+      end 
+
+      
       # Remove the lane name from lane barcode
       if laneBC.match(/^\d$/)
         bcName    = laneBC.gsub(/^\d/,"")          # Barcode name without lane

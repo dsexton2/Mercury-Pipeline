@@ -46,21 +46,34 @@ class VariantDriver
     destDir = actionName.upcase
     FileUtils.mkdir(destDir)
     FileUtils.cd(destDir)
-    variantCallObj = Scheduler.new(@fcBarcode + "_" + actionName.upcase, variantCallCmd)
+    variantCallObj = Scheduler.new(@fcBarcode + "_Mercury_" + actionName.upcase + "_Atlas", variantCallCmd)
     variantCallObj.setMemory(8000)
     variantCallObj.setNodeCores(1)
     variantCallObj.setPriority(SchedulerInfo::DEFAULT_QUEUE)
     variantCallObj.runCommand()
     prevJobName = variantCallObj.getJobName()
 
-    variantAnnoObj = Scheduler.new(@fcBarcode + "_" + actionName + "_Annotate",
-                                   variantAnnoCmd)
-    variantAnnoObj.setMemory(16000)
-    variantAnnoObj.setNodeCores(4)
-    variantAnnoObj.setPriority(SchedulerInfo::ANNOTATION_QUEUE)
-    variantAnnoObj.setDependency(prevJobName)
-    variantAnnoObj.runCommand()
-    prevJobName = variantAnnoObj.getJobName()
+    
+    if true == isReferenceHG19()    #Only run Cassandra annotation on hg19 human reference sequence
+       variantAnnoObj = Scheduler.new(@fcBarcode + "_Mercury_" + actionName.upcase + "_Annotate", variantAnnoCmd)
+       variantAnnoObj.setMemory(10000)
+       variantAnnoObj.setNodeCores(1)
+       variantAnnoObj.setPriority(SchedulerInfo::ANNOTATION_QUEUE)
+       variantAnnoObj.setDependency(prevJobName)
+       variantAnnoObj.runCommand()
+       prevJobName = variantAnnoObj.getJobName()
+    end
+     
+    if actionName.eql?("snp")     #Only upload VCF stats to LIMS after SNP Atlas and Annotate is complete which always finishes after INDEL, hence motive to upload after SNP.
+       FileUtils.cd("../")        #These upload lines will upload SNP and INDEL VCF PATHS and FALGS set to TRUE if VCF exists
+       uploadStatsLIMScmd = "ruby " + PathInfo::WRAPPER_DIR + "/ResultUploader.rb ANALYSIS_FINISHED"
+       uploadStatsLIMS = Scheduler.new(@fcBarcode + "_uploadSTATSlimsVCF", uploadStatsLIMScmd)
+       uploadStatsLIMS.setMemory(1000)
+       uploadStatsLIMS.setNodeCores(1)
+       uploadStatsLIMS.setPriority(SchedulerInfo::DEFAULT_QUEUE)
+       uploadStatsLIMS.setDependency(prevJobName)
+       uploadStatsLIMS.runCommand()
+    end
   end
 
   private
@@ -121,11 +134,21 @@ class VariantDriver
     end
   end
 
+  def isReferenceHG19()
+    if @reference != nil && @reference.match(/hg19\.fa$/)
+       return true
+    else
+       return false
+    end
+  end
+
+
+
   # Build the SNP caller command
   def buildSNPCallCommand()
     cmd = "ruby " + PathInfo::BLACK_BOX_DIR + "/VariantCallerWrapper.rb " +
           @bamFile.to_s + " " + @reference.to_s + " " + @sampleName.to_s + " " +
-          @sampleName.to_s + " snp 1>snp_caller.o 2>snp_caller.e"
+          @sampleName.to_s + " snp 1>snp_caller_log.o 2>snp_caller_log.e"
     return cmd
   end
 
@@ -133,21 +156,21 @@ class VariantDriver
   def buildINDELCallCommand()
     cmd = "ruby " + PathInfo::BLACK_BOX_DIR + "/VariantCallerWrapper.rb " +
           @bamFile.to_s + " " + @reference.to_s + " " + @sampleName.to_s + " " +
-          @sampleName.to_s + " indel 1>indel_caller.o 2>indel_caller.e"
+          @sampleName.to_s + " indel 1>indel_caller_log.o 2>indel_caller_log.e"
     return cmd
   end
 
   # Build the command to annotate SNP calls
   def buildSNPAnnotationCallCommand()
     cmd = "ruby " + PathInfo::BLACK_BOX_DIR + "/VariantAnnotatorWrapper.rb snp " + 
-          " 1>snp_annotator.o 2>snp_annotator.e"
+          " 1>snp_annotator_log.o 2>snp_annotator_log.e"
     return cmd
   end
 
   # Build the command to annotate indel calls
   def buildINDELAnnotationCallCommand()
     cmd = "ruby " + PathInfo::BLACK_BOX_DIR + "/VariantAnnotatorWrapper.rb indel " + 
-          " 1>indel_annotator.o 2>indel_annotator.e"
+          " 1>indel_annotator_log.o 2>indel_annotator_log.e"
     return cmd
   end
 

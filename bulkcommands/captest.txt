@@ -1,3 +1,0 @@
-/stornext/snfs0/next-gen/Illumina/Instruments/700896/111114_SN896_0149_AD0E9AACXX/Data/Intensities/BaseCalls/Demultiplexed/002/GERALD_29-11-2011_p-illumina.3
-/stornext/snfs0/next-gen/Illumina/Instruments/700896/111114_SN896_0149_AD0E9AACXX/Data/Intensities/BaseCalls/Demultiplexed/001/GERALD_29-11-2011_p-illumina.3
-/stornext/snfs0/next-gen/Illumina/Instruments/700896/111114_SN896_0149_AD0E9AACXX/Data/Intensities/BaseCalls/Demultiplexed/003/GERALD_29-11-2011_p-illumina.3

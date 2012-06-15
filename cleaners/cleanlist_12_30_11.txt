@@ -1,9 +1,0 @@
-/stornext/snfs0/next-gen/Illumina/Instruments/700142/111116_SN142_0408_AD0E6WACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700733/111106_SN733_0184_AD0E0EACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700166/111125_SN166_0287_BD0GMAACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700601/111121_SN601_0198_BC09L6ACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700805/110721_SN805_0078_BC03D9ACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700805/111121_SN805_0123_AD0F8PACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700881/111117_SN881_0158_BC08MTACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700898/111122_SN898_0148_BC09HPACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700898/111122_SN898_0147_AD0FHKACXX

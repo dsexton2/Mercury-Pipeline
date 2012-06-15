@@ -1,5 +1,0 @@
-/stornext/snfs0/next-gen/Illumina/Instruments/700820/120223_SN820_0216_AD0R4LACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700820/120223_SN820_0217_BD0RM3ACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700820/120313_SN820_0223_AD0TKEACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700821/120314_SN821_0179_AC0J66ACXX
-/stornext/snfs0/next-gen/Illumina/Instruments/700821/120215_SN821_0172_BD0N76ACXX

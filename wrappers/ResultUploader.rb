@@ -73,7 +73,9 @@ class LaneResult
 
       if @readType.to_s.eql?("1")
         result = result + " RESULTS_PATH " + FileUtils.pwd +
-                 " REFERENCE_PATH " + @referencePath + " BAM_PATH " + getBAMPath()
+                 " REFERENCE_PATH " + @referencePath + " BAM_PATH " + getBAMPath() +
+                 " SNP_VCF_RESULTPATH " + getSnpPath() + " INDEL_VCF_RESULTPATH " + getIndelPath() + " REALIGNED_BAM_PATH " + getRealignedBamPath() +
+                 " VCF_SNP_GENERATED_FLAG " + @VCF_SNP_GENERATED_FLAG_value + " VCF_INDEL_GENERATED_FLAG " + @VCF_INDEL_GENERATED_FLAG_value
       end
     end
     return result
@@ -103,7 +105,11 @@ class LaneResult
   # Read DemultiplexedBustardSummary.xml file and obtain values of phasing,
   # prephasing, first cycle intensity and percent intensity after 20 cycles.
   def parseDemuxBustardSummary(demuxBustardSummaryXML)
-    laneNumber = @fcBarcode.slice(/-\d/)
+    if @fcBarcode.match(/-\d[0]+-\d-/)              #MiSeq fcBarcode, remove cartirdge ID containing 300 or any integer other in future
+         laneNumber = @fcBarcode.gsub(/-\d+-/, "-").slice!(/-\d/)
+    else
+       laneNumber = @fcBarcode.slice(/-\d/)        #HiSeq fcBarcode
+    end
     laneNumber.gsub!(/^-/, "")
 
     xmlDoc = Hpricot::XML(open(demuxBustardSummaryXML))
@@ -174,7 +180,11 @@ class LaneResult
         @meanQualScore         = dataElements[14].inner_html
       end
       #Added April 27, 2012 - Start to parse undetermined indicies for lane
-      laneNumber = @fcBarcode.slice(/-\d/) 
+      if @fcBarcode.match(/-\d[0]+-\d-/)              #MiSeq fcBarcode, remove cartirdge ID containing 300 or any integer other in future
+         laneNumber = @fcBarcode.gsub(/-\d+-/, "-").slice!(/-\d/)
+      else
+	 laneNumber = @fcBarcode.slice(/-\d/) 
+      end
       laneNumber.gsub!(/^-/, "")  
       id3 = "Undetermined" 
       if dataElements[0].inner_html.eql?(laneNumber) && dataElements[3].inner_html.eql?(id3)
@@ -184,8 +194,8 @@ class LaneResult
 	     @laneUndeterminedIndices_PERCENT_PF = dataElements[8].inner_html
 	  end
       elsif @laneUndeterminedIndices == nil
-	  @laneUndeterminedIndices = 0
-	  @laneUndeterminedIndices_PERCENT_PF = 0
+         @laneUndeterminedIndices = 0
+    	 @laneUndeterminedIndices_PERCENT_PF = 0
       end
     end
   end
@@ -210,6 +220,48 @@ class LaneResult
     else
       return Dir.pwd + "/" + bamFile[0].to_s
     end
+  end
+
+  def getSnpPath()
+    snpPATH = Dir["SNP/*_Annotated.vcf"]
+    if snpPATH != nil && snpPATH.length == 1
+	@VCF_SNP_GENERATED_FLAG_value = "TRUE"
+	return Dir.pwd + "/" + snpPATH[0].to_s
+    end
+    snpPATH = Dir["SNP/*.SNPs.vcf"]
+    if snpPATH != nil && snpPATH.length == 1
+	@VCF_SNP_GENERATED_FLAG_value = "TRUE"
+	return Dir.pwd + "/" + snpPATH[0].to_s
+    else
+        @VCF_SNP_GENERATED_FLAG_value = "FALSE"
+	return "none"
+    end
+  end
+  
+  def getIndelPath()
+     indelPATH = Dir["INDEL/*_Annotated.vcf"]
+     if indelPATH != nil && indelPATH.length == 1
+	@VCF_INDEL_GENERATED_FLAG_value = "TRUE"
+        return Dir.pwd + "/" + indelPATH[0].to_s
+     end 
+     indelPATH = Dir["INDEL/*.INDELs.vcf"]
+     if indelPATH != nil && indelPATH.length == 1
+	@VCF_INDEL_GENERATED_FLAG_value = "TRUE"
+	return Dir.pwd + "/" + indelPATH[0].to_s
+     else
+	@VCF_INDEL_GENERATED_FLAG_value = "FALSE"
+        return "none"
+     end 
+  end
+
+  # Get complete path name of the GATK realigned BAM file
+  def getRealignedBamPath()
+     realignedbamFile = Dir["*_realigned.bam"]
+     if realignedbamFile == nil || realignedbamFile.length != 1
+        return "none"
+     else
+        return Dir.pwd + "/" + realignedbamFile[0].to_s
+     end
   end
 
   # Helper method to get alignment percentage and error rate

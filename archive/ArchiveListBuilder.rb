@@ -31,7 +31,7 @@ private
     # changed. 
     # TODO: This should be improved. Must be made a command line parameter.
     
-    time = time - 172800 
+    time = time - 345600           #Changed from 172800 seconds (2 days) to 345600 (4 days). May 25, 2012. Mike D.
     ascTime = time.strftime("%Y-%m-%d")
     return ascTime
   end

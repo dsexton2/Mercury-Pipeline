@@ -166,10 +166,10 @@ private
     # flowcells are picked up, an error will occur while trying to contact LIMS
     # and an email will be sent. However. all HGSC flowcells on this sequencers
     # should be picked up properly.
-    if fcName.match(/SN601/) 
-       puts "Flowcell " + fcName + " is not configured for automatic analysis"
-       return false
-    end
+    #if fcName.match(/SN601/) 
+    #   puts "Flowcell " + fcName + " is not configured for automatic analysis"
+    #   return false
+    #end
 
     # If the marker file RTAComplete.txt was written more than 1 hour ago, then
     # add the new marked file and return.
