@@ -33,7 +33,10 @@ class CleanFlowcell
         
 	puts "Cleaning casava_fastq directories in each sample folder."
 	cleanCasavaFastq()
-		
+	
+	puts "Cleaning large files left over by Mercury GATK and SNP and INDEL calling components"
+	cleanMurcuryExcess(fcName)
+	
 	puts "Completed cleaning " + fcName
         puts ""
         Dir.chdir(pwd)
@@ -83,6 +86,48 @@ class CleanFlowcell
     output = `#{cmd}`
     puts output
   end
+
+  def cleanMurcuryExcess(fcName)
+    projectDIR = Dir["Results/Project_*"]
+    fcResults = fcName + "/" + projectDIR[0]
+    Dir.chdir(fcResults)
+    puts "Inside Results DIR : " + Dir.pwd
+    samplesInFlowCell = Dir['*/']
+    samplesInFlowCell.each do |x| 
+      Dir.chdir(x)
+      @GATKraligned_BAM_FILE = Dir["*_realigned.bam"]
+      @BWA_BAM_FILE = Dir["*_marked.bam"]
+      @BWA_BAM_INDEX = Dir["*_marked.bam.bai"]
+      if @BWA_BAM_FILE != nil && (@BWA_BAM_FILE.size > 0) && (@GATKraligned_BAM_FILE !=nil) && (@GATKraligned_BAM_FILE.size > 0)
+      #Found Both BWA BAM and GATK realined BAM. Remove BWA BAM and the BAM index 
+        cmd = "rm -f " + File.expand_path(@BWA_BAM_FILE[0])
+        puts "Removing BWA BAM because GATK BAM exists. Command:  " + cmd
+	output = `#{cmd}`
+	puts output
+        runRemoveCommand(File.expand_path(@BWA_BAM_INDEX[0])) if (@BWA_BAM_INDEX[0] !=nil && @BWA_BAM_INDEX[0].size > 0)
+      
+      end
+      pileUp = Dir["*.pileup"]
+      intervals = Dir["*.intervals"]
+      rawAtlasSNPvcf = Dir["SNP/*.SNPs"]
+      recalBAMfile = Dir["*_marked.recal.bam"]
+      recalBAMfileBAI = Dir["*_marked.recal.bai"]
+   
+      runRemoveCommand(File.expand_path(pileUp[0])) if (pileUp[0] !=nil && pileUp[0].size > 0)
+      runRemoveCommand(File.expand_path(intervals[0])) if (intervals[0] !=nil && intervals[0].size > 0)
+      runRemoveCommand(File.expand_path(rawAtlasSNPvcf[0])) if (rawAtlasSNPvcf[0] !=nil && rawAtlasSNPvcf[0].size > 0)
+      runRemoveCommand(File.expand_path(recalBAMfile[0])) if (recalBAMfile[0] !=nil && recalBAMfile[0].size > 0)
+      runRemoveCommand(File.expand_path(recalBAMfileBAI[0])) if (recalBAMfileBAI[0] !=nil && recalBAMfileBAI[0].size > 0)
+      Dir.chdir(fcResults)
+    end
+  end
+
+  def runRemoveCommand(filename)
+    runCommand = "rm -f " + filename
+    #puts "Executing: " + runCommand
+    system(runCommand)
+  end
+
 
 end
 

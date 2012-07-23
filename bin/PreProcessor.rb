@@ -131,10 +131,15 @@ class PreProcessor
       raise outputFile + " not created"
     end
 
-    if outputFile.match(/\d{3}-\d/)                    #Retreived MiSeq barcodes from LIMS contains cartridge ID. This throws off building of barcode_definition.txt
-	removeMiseqCartridge = File.read(outputFile)   #Cartridge ID is removed so barcode ID is similar to HiSeq in order to build SampleSheet successfully
-	replace = removeMiseqCartridge.gsub(/\d{3}\-/, '')
-	File.open(outputFile, "w") { |file| file.puts replace }
+    f = File.new(outputFile)
+    text = f.read
+    if text =~ /300-1-/ then
+       removeMiseqCartridge = File.read(outputFile) 
+       replace = removeMiseqCartridge.gsub(/Name="300-1-/, 'Name="1-')
+       File.open(outputFile, "w") { |file| file.puts replace }
+       removeMiseqCartridge = File.read(outputFile)
+       replace2 = removeMiseqCartridge.gsub(/ID="300-1-/, 'ID="1-')
+       File.open(outputFile, "w") { |file| file.puts replace2 }
     end
 
   end  
