@@ -21,8 +21,8 @@ class PostAlignmentProcess
           runGATKrecalibration()
           runGATKrealignment()
           runSamtoolsPileup()
-          runVariantDriverSNP()
           runVariantDriverIndel()
+	  runVariantDriverSNP()
        rescue Exception => e
            $stderr.puts "Error occured during Mercury stage for flowcell : " + @fcBarcode.to_s + "\n Also sending email to team"
 	   $stderr.puts e.message

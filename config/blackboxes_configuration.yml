@@ -24,3 +24,11 @@ indelAnnoToVCF:
   codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/annotation_caller"
   code: "IndelAnnoToVCF.jar"
   starter: "java -jar"
+VCFanalyzer:
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/VCFanalyzer"
+  code: "vcfAnalyzer.pl"
+  starter: "/hgsc_software/perl/latest/bin/perl"
+Mendelian_VCFpost:
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/_CONVERT_BINv2"
+  code: "RUNCONVERSION.pl"
+  starter: "/hgsc_software/perl/latest/bin/perl"

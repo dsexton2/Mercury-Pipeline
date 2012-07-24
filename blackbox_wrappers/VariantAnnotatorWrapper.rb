@@ -18,6 +18,8 @@ class VariantAnnotatorWrapper
     executeCmd()
     buildAnnotationToVCFCommandString(configReader)
     executeCmd()
+    buildVCFanalyzerCommandString(configReader)
+    executeCmd()
   end
 
   private 
@@ -142,6 +144,15 @@ class VariantAnnotatorWrapper
     cmdPrefix = howToRun + " " + codeDir + "/" + code
     @cmdToRun = cmdPrefix + " " + @vcfFile.to_s + " " + findAnnotatedOutputFile() + 
                 " " + findAnnotatedMetaFile() + " " + getOutputFileName()
+  end
+
+  def buildVCFanalyzerCommandString(configReader)
+    howToRun    = configReader["VCFanalyzer"]["starter"]
+    codeDir     = configReader["VCFanalyzer"]["codeDirectory"]
+    code        = configReader["VCFanalyzer"]["code"]
+    cmdPrefix = howToRun + " " + codeDir + "/" + code
+    libraryNameFromVCF = @vcfFile.gsub(/\.vcf$/, "") 
+    @cmdToRun = cmdPrefix + " " + getOutputFileName() + ">" + libraryNameFromVCF + "_VCFanalyzer_results" + ".txt" 
   end
 
   # Execute the command

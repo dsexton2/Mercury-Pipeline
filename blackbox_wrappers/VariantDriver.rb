@@ -62,9 +62,11 @@ class VariantDriver
        variantAnnoObj.setDependency(prevJobName)
        variantAnnoObj.runCommand()
        prevJobName = variantAnnoObj.getJobName()
-    end
-     
-    if actionName.eql?("snp")     #Only upload VCF stats to LIMS after SNP Atlas and Annotate is complete which always finishes after INDEL, hence motive to upload after SNP.
+       job_name_LOGfilename = actionName.upcase + "_Annotate_MOAB_job_name.txt"
+       File.open(job_name_LOGfilename, "w") {|f| f.write(prevJobName) }
+    end 
+    
+    if actionName.eql?("snp")     #Upload VCF stats to LIMS after SNP and INDEL Annotate is complete
        FileUtils.cd("../")        #These upload lines will upload SNP and INDEL VCF PATHS and FALGS set to TRUE if VCF exists
        uploadStatsLIMScmd = "ruby " + PathInfo::WRAPPER_DIR + "/ResultUploader.rb ANALYSIS_FINISHED"
        uploadStatsLIMS = Scheduler.new(@fcBarcode + "_uploadSTATSlimsVCF", uploadStatsLIMScmd)
@@ -72,7 +74,21 @@ class VariantDriver
        uploadStatsLIMS.setNodeCores(1)
        uploadStatsLIMS.setPriority(SchedulerInfo::DEFAULT_QUEUE)
        uploadStatsLIMS.setDependency(prevJobName)
+       if true == isIndelAnnotateJobNameAvail()
+       uploadStatsLIMS.setDependency(@indelAnnotateJobName)
+       end
        uploadStatsLIMS.runCommand()
+       
+       if true == isIndelAnnotateJobNameAvail()  #Run Mendelian VCF calc and format modifications using **BOTH** SNP and INDEL Annotated VCF and BAM
+         generateVCFpostCmd = "ruby " + PathInfo::BLACK_BOX_DIR + "/MendelianVCFpost.rb"
+         generateVCFpostObj = Scheduler.new(@fcBarcode + "_MendelianVCFpost", generateVCFpostCmd)
+         generateVCFpostObj.setMemory(1000)
+         generateVCFpostObj.setNodeCores(1)
+         generateVCFpostObj.setPriority(SchedulerInfo::DEFAULT_QUEUE)
+         generateVCFpostObj.setDependency(prevJobName)    #SNP Annotation prevJobName   
+         generateVCFpostObj.setDependency(@indelAnnotateJobName)  #INDEL Annotation prevJobName
+         generateVCFpostObj.runCommand()
+       end
     end
   end
 
@@ -142,6 +158,17 @@ class VariantDriver
     end
   end
 
+  def isIndelAnnotateJobNameAvail
+    indelAnnotateLogFile = Dir["INDEL/INDEL_Annotate_MOAB_job_name.txt"]    #Get JobName to be used as MOAB job dependency. Needed for MOAB jobs that must occur  
+    if (indelAnnotateLogFile[0] !=nil && indelAnnotateLogFile[0].size > 0)  #ONLY AFTER both INDEL and SNP Cassandra annotation jobs are done
+      File.open(indelAnnotateLogFile[0]).each_line{ |read_line|
+      @indelAnnotateJobName = read_line
+      }
+      return true
+    else
+      return false
+    end
+  end
 
 
   # Build the SNP caller command
