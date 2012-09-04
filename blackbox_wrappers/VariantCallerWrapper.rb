@@ -42,11 +42,12 @@ class VariantCallerWrapper
     howToRun       = configReader["snpCaller"]["starter"]
     codeDir        = configReader["snpCaller"]["codeDirectory"]
     code           = configReader["snpCaller"]["code"]
+    vipBedFile     = configReader["AtlasVIP"]["BEDfile"]
 
     cmdPrefix = howToRun + " " + codeDir + "/" + code
     snpCmd = cmdPrefix + " -i " + @bamFile.to_s + " -r " + @reference + 
-              " -o " + @sample.to_s + ".SNPs -y 6 -s -v -n " +
-              @sample.to_s
+              " -o " + @sample.to_s + ".SNPs -y 6 -s -n " +    #removed -v not needed option in new version AtlasVIP
+              @sample.to_s + " -a " + vipBedFile
     puts "Command to run SNP "
     puts snpCmd.to_s
     @cmdToRun = snpCmd
@@ -59,10 +60,11 @@ class VariantCallerWrapper
     howToRun       = configReader["indelCaller"]["starter"]
     codeDir        = configReader["indelCaller"]["codeDirectory"]
     code           = configReader["indelCaller"]["code"]
+    vipBedFile     = configReader["AtlasVIP"]["BEDfile"]
 
     cmdPrefix = howToRun + " " + codeDir + "/" + code
     indelCmd  = cmdPrefix + " -b " + @bamFile.to_s + " -r " + @reference +
-                " -s " + @sample + " -I " + "-o " + @sample + ".INDELs.vcf"
+                " -s " + @sample + " -I " + "-o " + @sample + ".INDELs.vcf" + " -a " + vipBedFile
     puts "Command to run indel "
     puts indelCmd.to_s
     @cmdToRun = indelCmd

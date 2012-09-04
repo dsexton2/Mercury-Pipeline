@@ -44,7 +44,7 @@ class VariantDriver
     end
 
     destDir = actionName.upcase
-    FileUtils.mkdir(destDir)
+    Dir.mkdir(destDir) unless File.exists?(destDir)
     FileUtils.cd(destDir)
     variantCallObj = Scheduler.new(@fcBarcode + "_Mercury_" + actionName.upcase + "_Atlas", variantCallCmd)
     variantCallObj.setMemory(8000)
@@ -74,9 +74,9 @@ class VariantDriver
        uploadStatsLIMS.setNodeCores(1)
        uploadStatsLIMS.setPriority(SchedulerInfo::DEFAULT_QUEUE)
        uploadStatsLIMS.setDependency(prevJobName)
-       if true == isIndelAnnotateJobNameAvail()
-       uploadStatsLIMS.setDependency(@indelAnnotateJobName)
-       end
+       #if true == isIndelAnnotateJobNameAvail()
+       #uploadStatsLIMS.setDependency(@indelAnnotateJobName)
+       #end
        uploadStatsLIMS.runCommand()
        
        if true == isIndelAnnotateJobNameAvail()  #Run Mendelian VCF calc and format modifications using **BOTH** SNP and INDEL Annotated VCF and BAM

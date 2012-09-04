@@ -15,7 +15,7 @@ class PostAlignmentProcess
     obtainPathAndResourceInfo()
     if true == isHumanSample() && true == existsBAMPath()      
        begin
-          $stdout.puts @fcBarcode + " is a human sample, *_marked.bam exists, will go ahead and process GATK recalibration, indel realingment and SNP and INDEL calling."
+          $stdout.puts @fcBarcode + " is a human sample hg19, *_marked.bam exists, will go ahead and process GATK recalibration, indel realingment and SNP and INDEL calling."
           bamFile = @fcBarcode + "_marked.bam"
           runSAMTOOLSindex(bamFile)
           runGATKrecalibration()
@@ -33,10 +33,10 @@ class PostAlignmentProcess
        $stdout.puts @fcBarcode + " is a human sample but could not find maximum one *_marked.bam file for GATK recalibration, indel realingment and SNP and INDEL calling."
        handleError("Human sample does not have ONLY ONE " + @fcBarcode + "_marked.bam file for SNP and INDEL processing. iPipe does not know which BAM to use for downstream analysis") 
     else
-       $stdout.puts @fcBarcode + " is not a human sample, will not process GATK recalibration, indel realingment and SNP and INDEL calling."
+       $stdout.puts @fcBarcode + " is not a human sample hg19, will not process GATK recalibration, indel realingment and SNP and INDEL calling."
     end
     
-    if false == isHumanSample()   #For non-human samples upload BWA BAM results now. For human samples, results upload command is run in /blackbox_wrappers/VariantDriver.rb which allows for LIMS upload after Mercury is finished
+    if false == isHumanSample()   #For non-human samples and human hg18 upload BWA BAM results now. For human samples hg19, results upload command is run in /blackbox_wrappers/VariantDriver.rb which allows for LIMS upload after Mercury is finished
       uploadResultsToLIMS()
     end
     bwaStatsUpload()
@@ -141,7 +141,7 @@ class PostAlignmentProcess
 # Read the reference path and determine if the given sequencing event is human
 # or not.
   def isHumanSample()
-     if @referencePath != nil && @referencePath.match(/hg1[89]\.fa$/)
+     if @referencePath != nil && @referencePath.match(/hg19\.fa$/)    # hg1[89]
         return true
      else
         return false

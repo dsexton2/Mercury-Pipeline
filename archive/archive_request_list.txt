@@ -10,3 +10,5 @@
 /stornext/snfs0/next-gen/Illumina/Instruments/700738/110824_SN738_0099_AD0A88ACXX/Data/Intensities/BaseCalls/Demultiplexed/002/GERALD_06-09-2011_p-illumina.8
 /stornext/snfs0/next-gen/Illumina/Instruments/700601/110830_SN601_0162_BD0AAUACXX/Data/Intensities/BaseCalls/Demultiplexed/003/GERALD_13-09-2011_p-illumina
 /stornext/snfs0/next-gen/Illumina/Instruments/700896/110828_SN896_0114_AD0A89ACXX/Data/Intensities/BaseCalls/Demultiplexed/004/GERALD_13-09-2011_p-illumina.6
+/stornext/snfs0/next-gen/Illumina/Instruments/7001324/120806_SN7001324_0025_AC0YWDACXX/Results/Project_120806_SN7001324_0025_AC0YWDACXX/Sample_C0YWDACXX-3
+/stornext/snfs0/next-gen/Illumina/Instruments/700805/120806_SN805_0240_AC0YBHACXX/Results/Project_120806_SN805_0240_AC0YBHACXX/Sample_C0YBHACXX-4

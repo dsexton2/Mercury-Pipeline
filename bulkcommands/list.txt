@@ -1,2 +1,1 @@
-/stornext/snfs0/next-gen/Illumina/Instruments/700898/120411_SN898_0206_AD0LM0ACXX/Results/Project_120411_SN898_0206_AD0LM0ACXX/Sample_D0LM0ACXX-6-ID02
-/stornext/snfs0/next-gen/Illumina/Instruments/700898/120411_SN898_0206_AD0LM0ACXX/Results/Project_120411_SN898_0206_AD0LM0ACXX/Sample_D0LM0ACXX-6-ID03
+/stornext/snfs0/next-gen/Illumina/Instruments/700807/110318_SN807_0036_A702JAABXX/Data/Intensities/BaseCalls/GERALD_01-04-2011_p-illumina.2

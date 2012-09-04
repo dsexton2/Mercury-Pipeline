@@ -32,3 +32,5 @@ Mendelian_VCFpost:
   codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/_CONVERT_BINv2"
   code: "RUNCONVERSION.pl"
   starter: "/hgsc_software/perl/latest/bin/perl"
+AtlasVIP:
+  BEDfile: "/stornext/snfs5/next-gen/Illumina/ipipeV2/config/SNP_INDEL_VIPlist.bed"

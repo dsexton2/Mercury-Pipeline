@@ -110,12 +110,14 @@ class CleanFlowcell
       pileUp = Dir["*.pileup"]
       intervals = Dir["*.intervals"]
       rawAtlasSNPvcf = Dir["SNP/*.SNPs"]
+      rawAtlasSNPvcfNewVersionAtlas = Dir["SNP/*.SNPs.snp"]
       recalBAMfile = Dir["*_marked.recal.bam"]
       recalBAMfileBAI = Dir["*_marked.recal.bai"]
    
       runRemoveCommand(File.expand_path(pileUp[0])) if (pileUp[0] !=nil && pileUp[0].size > 0)
       runRemoveCommand(File.expand_path(intervals[0])) if (intervals[0] !=nil && intervals[0].size > 0)
       runRemoveCommand(File.expand_path(rawAtlasSNPvcf[0])) if (rawAtlasSNPvcf[0] !=nil && rawAtlasSNPvcf[0].size > 0)
+      runRemoveCommand(File.expand_path(rawAtlasSNPvcfNewVersionAtlas[0])) if (rawAtlasSNPvcfNewVersionAtlas[0] !=nil && rawAtlasSNPvcfNewVersionAtlas[0].size > 0)
       runRemoveCommand(File.expand_path(recalBAMfile[0])) if (recalBAMfile[0] !=nil && recalBAMfile[0].size > 0)
       runRemoveCommand(File.expand_path(recalBAMfileBAI[0])) if (recalBAMfileBAI[0] !=nil && recalBAMfileBAI[0].size > 0)
       Dir.chdir(fcResults)

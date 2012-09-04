@@ -1,4 +1,0 @@
-80CA3ABXX-2;/stornext/snfs0/next-gen/Illumina/Instruments/700166/101122_SN166_0152_A80CA3ABXX/Data/Intensities/BaseCalls/GERALD_06-12-2010_p-illumina.2
-80CA3ABXX-3;/stornext/snfs0/next-gen/Illumina/Instruments/700166/101122_SN166_0152_A80CA3ABXX/Data/Intensities/BaseCalls/GERALD_06-12-2010_p-illumina.3
-805CEABXX-1;/stornext/snfs0/next-gen/Illumina/Instruments/700142/101122_SN142_0253_A805CEABXX/Data/Intensities/BaseCalls/GERALD_07-12-2010_p-illumina
-80CA3ABXX-1;/stornext/snfs0/next-gen/Illumina/Instruments/700166/101122_SN166_0152_A80CA3ABXX/Data/Intensities/BaseCalls/GERALD_06-12-2010_p-illumina
