@@ -28,7 +28,6 @@ class AnalysisStarter
     initializeMembers()
 
     baseDir = PipelineHelper.getInstrumentRootDir()
-    puts "Root directory to look for new flowcells : " + baseDir
 
     # ATTEmpt to obtain the lock, if another instance of this program is
     # running, this operation will fail. Print a suitable message and exit.
@@ -41,26 +40,31 @@ class AnalysisStarter
       ErrorHandler.handleError(obj)
       exit 0
     end
-    buildInstrumentList(baseDir)
+    
+    baseDir.each do |baseDirAll|        #Iterate through BluArc and Stornext FS. baseDir is an array containing multiple Instrument DIR mount points
+      buildInstrumentList(baseDirAll)
+      puts "Root directory to look for new flowcells : " + baseDirAll
+    
+      @instrList.each do |instrName|    
+        puts "Checking for new flowcells for sequencer : " + instrName.to_s
+        @instrDir = baseDirAll + "/" + instrName.to_s
 
-    @instrList.each do |instrName|
-      puts "Checking for new flowcells for sequencer : " + instrName.to_s
-      @instrDir = baseDir + "/" + instrName.to_s
+        puts "Directory : " + @instrDir.to_s
+        buildAnalyzedFCList()
+        findNewFlowcells()
 
-      puts "Directory : " + @instrDir.to_s
-      buildAnalyzedFCList()
-      findNewFlowcells()
-
-      @newFC.each do |fcName|
-        if fcReady?(fcName) == true
-          updateDoneList(fcName)
-          processFlowcell(fcName)
+        @newFC.each do |fcName|
+          if fcReady?(fcName) == true
+            updateDoneList(fcName)
+            processFlowcell(fcName)
+          end
         end
       end
+    end
 
     # Release the lock to allow another instance of this program to run.
     @lock.unlock
-    end
+    #end
   end
 
 private
@@ -70,6 +74,7 @@ private
     @fcList    = nil                  # Flowcell list
     @completedFCLog = "done_list.txt" # List of flowcells analyzed
     @newFC     = Array.new            # Flowcell to analyze
+    @instrList = Array.new
 
     # Create a new lock - this acts like a Singleton pattern for this program.
     # The lock is a file "lock_$filename" in the directory where this code

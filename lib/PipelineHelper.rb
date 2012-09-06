@@ -39,9 +39,14 @@ class PipelineHelper
     # but needs to be parsed correctly. MiSeq instruments cartridge ID and run folders
     # have suffix ID 00300 but in LIMS suffix is stored as 300 in flowcell ID. Following code removes 2 zeros 
     # The 300 represents 150x2 bp Illumina kits to bring 300 bp reads. This can change in future, code is already flexible for this.
-    if limsFCName.match(/-[0]+\d[0]+/)
+    if limsFCName.match(/-[0]+\d[0]+/)  #For MiSeq V1
        limsFCName.gsub!(/-00/, "-")
     end 
+   
+    if limsFCName.match(/-\d00V2/)         #For MiSeq V2
+       limsFCName.gsub!(/00V2/, "00v2")
+    end
+
     fcBarcode  = limsFCName + "-" + laneBarcode.to_s
     return fcBarcode
   end
@@ -54,19 +59,22 @@ class PipelineHelper
       parentDir = Array.new
 
       # This represents location where to search for flowcell
-      rootDir    = getInstrumentRootDir() 
+      rootDirAll  = getInstrumentRootDir() #Ability to handle multiple Instrument mount points 
 
-      dirEntries = Dir.entries(rootDir)
-
-      # In the rootDir of the data copied over from the sequencers, find 
-      # directories corresponding to each sequencer and populate the 
-      # parentDir array
-      dirEntries.each do |dirEntry|
-        if !dirEntry.eql?(".") && !dirEntry.eql?("..") &&
-           File::directory?(rootDir + "/" + dirEntry.to_s)
-           parentDir << rootDir + "/" + dirEntry.to_s
+      rootDirAll.each { |x|                                
+        rootDir = x                                                                  
+        dirEntries = Dir.entries(x.to_s)                                                                  
+			                                                                                                                  
+        # In the rootDir of the data copied over from the sequencers, find 
+        # directories corresponding to each sequencer and populate the 
+        # parentDir array
+        dirEntries.each do |dirEntry|
+          if !dirEntry.eql?(".") && !dirEntry.eql?("..") &&
+             File::directory?(rootDir + "/" + dirEntry.to_s)
+             parentDir << rootDir + "/" + dirEntry.to_s
+          end
         end
-      end
+      }
 
       parentDir.each do |path|
         if File::exist?(path + "/" + fcName) &&
@@ -198,6 +206,14 @@ class PipelineHelper
     configFile   = PathInfo::CONFIG_DIR + "/config_params.yml"
     configReader = YAML.load_file(configFile)
     rootDir      = configReader["sequencers"]["rootDir"]
-    return rootDir
+    rootDir2     = configReader["sequencers"]["rootDir2"]
+    rootDir3     = configReader["sequencers"]["rootDir3"]
+    
+    rootDirAll = Array.new
+    rootDirAll << rootDir
+    rootDirAll << rootDir2
+    rootDirAll << rootDir3
+
+    return rootDirAll
   end
 end

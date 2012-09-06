@@ -116,9 +116,13 @@ class PreProcessor
     # It is only in PreProcessor.rb that we have to address this. The rest of pipeline calls PipelineHelper.formatFlowcellNameForLIMS
     # in its native form and works well.
     limsFCName = PipelineHelper.formatFlowcellNameForLIMS(@fcName)
-    if limsFCName.match(/[a-zA-Z0-9]+-00[0-9]+/)
+    if limsFCName.match(/[a-zA-Z0-9]+-00[0-9]+/)   # For MiSeq v1
        limsFCName.gsub!(/-00/, "-")
     end 
+
+    if limsFCName.match(/-\d00V2/)         #For MiSeq V2
+       limsFCName.gsub!(/00V2/, "00v2")
+    end
 
     cmd = "java -jar " + PathInfo::LIMS_API_DIR + "/FlowcellPlanDownloader.jar" +
           " " + LimsInfo::LIMS_DB_NAME + " " + limsFCName +
@@ -132,14 +136,20 @@ class PreProcessor
     end
 
     f = File.new(outputFile)
-    text = f.read
-    if text =~ /300-1-/ then
+    text = f.read           #Must re-write bottom code.. No test env is setup for MiSeq at this time
+    if text =~ /300-1-/ || text =~ /\d00v2-/ then
        removeMiseqCartridge = File.read(outputFile) 
        replace = removeMiseqCartridge.gsub(/Name="300-1-/, 'Name="1-')
        File.open(outputFile, "w") { |file| file.puts replace }
        removeMiseqCartridge = File.read(outputFile)
        replace2 = removeMiseqCartridge.gsub(/ID="300-1-/, 'ID="1-')
        File.open(outputFile, "w") { |file| file.puts replace2 }
+       removeMiseqCartridge = File.read(outputFile)
+       replace3 = removeMiseqCartridge.gsub(/ID="\d00v2-1-/, 'ID="1-')
+       File.open(outputFile, "w") { |file| file.puts replace3 }
+       removeMiseqCartridge = File.read(outputFile)
+       replace4 = removeMiseqCartridge.gsub(/Name="\d00v2-1-/, 'Name="1-')
+       File.open(outputFile, "w") { |file| file.puts replace4 }
     end
 
   end  
@@ -147,9 +157,14 @@ class PreProcessor
   # Helper method to upload analysis start date to LIMS for tracking purposes
   def uploadAnalysisStartDate()
     fcNameForLIMS = PipelineHelper.formatFlowcellNameForLIMS(@fcName)
-    if fcNameForLIMS.match(/-[0]+\d[0]+/)         #For MiSeq
+    if fcNameForLIMS.match(/-[0]+\d[0]+/)         #For MiSeq v1
       fcNameForLIMS.gsub!(/-00/, "-")
     end 
+
+    if fcNameForLIMS.match(/-\d00V2/)         #For MiSeq V2
+      fcNameForLIMS.gsub!(/00V2/, "00v2")
+    end
+
     limsScript = PathInfo::LIMS_API_DIR + "/setFlowCellAnalysisStartDate.pl"
 
     uploadCmd = "perl " + limsScript + " " + fcNameForLIMS
@@ -194,6 +209,9 @@ class PreProcessor
         fcBarcode.gsub!(/-00/, "-")
       end 
 
+      if fcBarcode.match(/-\d00V2/)         #For MiSeq V2
+        fcBarcode.gsub!(/00V2/, "00v2")
+      end
       
       # Remove the lane name from lane barcode
       if laneBC.match(/^\d$/)
