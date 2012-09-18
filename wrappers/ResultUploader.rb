@@ -38,9 +38,11 @@ class LaneResult
     if @resultStage.eql?("SEQUENCE_FINISHED")
       parseDemuxBustardSummary(demuxBustardSummaryXML)
       getYieldAndClusterInfo(demuxStatsHTM)
-    else
+    else            # ANALYSIS_FINISHED
       getReferencePath()
-      getAlignAndErrorPercent()
+      if !@referencePath.eql?("N/A")       
+        getAlignAndErrorPercent()
+      end
     end
   end
 

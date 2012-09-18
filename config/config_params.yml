@@ -33,5 +33,5 @@ lims:
   databaseName: "HGSC"
 generateVCF:
   gatkPath: "/hgsc_software/gatk/gatk-1.6.2/GenomeAnalysisTK.jar"
-  dbSnpPath: "/users/jy2/workspace/reference/phase2/mapping_resources/ALL.wgs.dbsnp.build135.snps.sites.vcf.gz"
+  dbSnpPath: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/DBsnp_dump/ALL.wgs.dbsnp.build135.snps.sites.vcf.gz"
   samtoolsPath: "/stornext/snfs5/next-gen/software/samtools-0.1.7/samtools"
