@@ -66,7 +66,7 @@ class  BarcodeDefinitionBuilder
     end
 
     if (maxSeqLength - minSeqLength) == 3
-       padding = "CTC"
+       padding = "ATC"
     end
 
     # Write all the tag name, sequence pairs to the output file
