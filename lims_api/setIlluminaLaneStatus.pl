@@ -44,8 +44,8 @@ print "usage: $0 lane_barcode status <name/value pairs>\n";
 exit;
 }
 
-#my $ncbiURL ="http://gen2.hgsc.bcm.tmc.edu/ngenlims/setIlluminaLaneStatus.jsp?";
-my $ncbiURL ="http://lims-1.hgsc.bcm.tmc.edu/ngenlims/setIlluminaLaneStatus.jsp?";
+my $ncbiURL ="http://gen2.hgsc.bcm.tmc.edu/ngenlims/setIlluminaLaneStatus.jsp?";
+#my $ncbiURL ="http://lims-1.hgsc.bcm.tmc.edu/ngenlims/setIlluminaLaneStatus.jsp?";
 my $paraStr = "lane_barcode=" . $ARGV[0]."&status=".$ARGV[1];
 
 my $i;
@@ -60,7 +60,16 @@ $ncbiURL="$ncbiURL$paraStr";
 my $ua = LWP::UserAgent->new;
 my $response=$ua->get($ncbiURL);
 
-if(not $response->is_success ) {print "Error: Cannot connect\n"; exit(-1);}
+if(not $response->is_success ) 
+    {
+    sleep(5);
+    my $response=$ua->get($ncbiURL);
+    }
+
+if(not $response->is_success ) 
+    {
+    print "Error: Cannot connect\n"; exit(-1);
+    }
 
 my $textStr= $response->content;
 $textStr=~/^\s*(.+)\s*$/;
