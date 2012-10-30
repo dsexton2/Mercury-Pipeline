@@ -183,6 +183,7 @@ class LaneResult
       end
       #Added April 27, 2012 - Start to parse undetermined indicies for lane
       if @fcBarcode.match(/-\d[0]+-\d-/)              #MiSeq fcBarcode, remove cartirdge ID containing 300 or any integer other in future
+	                                              #Needs to be modified for MiSeqV2 compatability
          laneNumber = @fcBarcode.gsub(/-\d+-/, "-").slice!(/-\d/)
       else
 	 laneNumber = @fcBarcode.slice(/-\d/) 

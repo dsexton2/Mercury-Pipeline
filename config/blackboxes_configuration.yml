@@ -1,5 +1,5 @@
 snpCaller:
-  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/SNPCaller"
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/Atlas2_v1.4.1/Atlas-SNP2"
   code: "Atlas-SNP2.rb"
   starter: "/hgsc_software/ruby/ruby-1.9.2/bin/ruby"
 snpAnnotator:
@@ -12,7 +12,7 @@ snpAnnoToVCF:
   code: "SNPAnnoToVCF.jar"
   starter: "java -jar"
 indelCaller:
-  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/IndelCaller"
+  codeDirectory: "/stornext/snfs5/next-gen/Illumina/ipipeV2/components/Atlas2_v1.4.1/Atlas-Indel2"
   code: "Atlas-Indel2.rb"
   starter: "/hgsc_software/ruby/ruby-1.9.2/bin/ruby"
 indelAnnotator:
