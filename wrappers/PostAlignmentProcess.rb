@@ -39,10 +39,11 @@ class PostAlignmentProcess
     if false == isHumanSample()   #For non-human samples and human hg18 upload BWA BAM results now. For human samples hg19, results upload command is run in /blackbox_wrappers/VariantDriver.rb which allows for LIMS upload after Mercury is finished
       uploadResultsToLIMS()
     end
-    if !@referencePath.eql?("N/A")
+   #if (!@referencePath.eql?("N/A")) 
+   if ((@referencePath != "N/A") && (@referencePath != "N/A_auto")) 
       bwaStatsUpload()
       emailAnalysisResults()
-    end
+   end
     cleanIntermediateFiles()
     zipSequenceFiles()
   end

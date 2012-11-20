@@ -26,7 +26,7 @@ class Aligner
   # Create cluster jobs to start the alignment
   def process()
     puts "FOUND REFERENCE PATH : " + @reference.to_s
-    if @reference.downcase.eql?("sequence") || @reference.eql?("N/A")
+    if @reference.downcase.eql?("sequence") || @reference.eql?("N/A") || @reference.eql?("N/A_auto")
       puts "No alignment to perform since reference is \"sequence\" or N/A"
       puts "Running postrun script to upload available stats and finish off pipeline analysis"
       runPostRunCmd("")

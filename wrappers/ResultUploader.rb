@@ -40,7 +40,8 @@ class LaneResult
       getYieldAndClusterInfo(demuxStatsHTM)
     else            # ANALYSIS_FINISHED
       getReferencePath()
-      if !@referencePath.eql?("N/A")       
+      #if !@referencePath.eql?("N/A")       
+      if ((@referencePath != "N/A") && (@referencePath != "N/A_auto")) 
         getAlignAndErrorPercent()
       end
     end

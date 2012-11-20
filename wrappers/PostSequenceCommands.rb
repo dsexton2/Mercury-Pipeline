@@ -33,7 +33,7 @@ sch1.runCommand()
 uniqJobName = sch1.getJobName()   #Later used as a dependency
 
 # Run PostAlignmentProcess now if sequence set to N/A, else do Aligner.rb b/c sequence set to genomic reference
-if reference.eql?("N/A")
+if reference.eql?("N/A") || reference.eql?("N/A_auto") 
     puts "Reference sequence has been set to N/A. Skipping read mapping, proceed to clean DIRs and upload result path"
 
     postRunCmd = "ruby " + PathInfo::WRAPPER_DIR + "/PostAlignmentProcess.rb"
