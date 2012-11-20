@@ -17,7 +17,7 @@ require 'SchedulerInfo'
 class CaptureStats
   def initialize(inputFile, chipDesignPath)
     @captureResult  = nil # Instance of CaptureStatsResult class
-
+    
     begin
       if inputFile == nil || inputFile.empty?()
         raise "BAM File name must be specified"
@@ -29,6 +29,7 @@ class CaptureStats
         raise "Specified chip design path : " + chipDesignPath + " is invalid"
       end
       puts "Chip Design Path : " + chipDesignPath.to_s
+      $chipDesignPathLIMS = chipDesignPath.to_s
 
       buildPathNames()
       getFlowcellBarcode()
@@ -315,7 +316,8 @@ class CaptureStatsResults
     " PER_TWENTY_COVERAGE_BASES " + @perBases20Coverage.to_s +
     " FORTY_COVERAGE_BASES " + @numBases40Coverage.to_s +
     " PER_FORTY_COVERAGE_BASES " + @perBases40Coverage.to_s +
-    "	PIPELINE_VERSION casava1.8.2"    #Pipeline changed to CASAVA 1.8.2 on April 13 2012 - Mike
+    "	PIPELINE_VERSION casava1.8.2 " +   #Pipeline changed to CASAVA 1.8.2 on April 13 2012 - Mike
+    " CHIP_DESIGN_USED_ANALYSIS " + $chipDesignPathLIMS   #Upload actual chipDesign Path used in analysis to LIMS - Nov 6 2012 - Mike
     return result
   end
 
@@ -377,4 +379,5 @@ end
 
 bamFile    = ARGV[0]
 chipDesign = ARGV[1]
+
 obj = CaptureStats.new(bamFile, chipDesign)

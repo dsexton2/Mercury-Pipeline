@@ -44,7 +44,8 @@ dirList.each do |dirEntry|
       end
     end
 
-    newFile.puts "CHIP_DESIGN=/users/p-illumina/" + chipDesign.to_s
+    #newFile.puts "CHIP_DESIGN=/users/p-illumina/" + chipDesign.to_s
+    newFile.puts "CHIP_DESIGN=" + chipDesign.to_s
     newFile.close
 
     #Replace the original BWAConfigParams.txt file
