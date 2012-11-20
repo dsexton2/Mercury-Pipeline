@@ -44,7 +44,8 @@ print "usage: $0 lane_barcode status <name/value pairs>\n";
 exit;
 }
 
-my $ncbiURL ="http://lims-1.hgsc.bcm.tmc.edu/ngenlims/setIlluminaCaptureResults.jsp?";
+#my $ncbiURL ="http://lims-1.hgsc.bcm.tmc.edu/ngenlims/setIlluminaCaptureResults.jsp?";
+my $ncbiURL = "http://gen2.hgsc.bcm.tmc.edu/ngenlims/setIlluminaCaptureResults.jsp?";
 my $paraStr = "lane_barcode=" . $ARGV[0]."&status=".$ARGV[1];
 
 my $i;

@@ -12,8 +12,8 @@ print "usage: $0 flowcellBarcode \n";
 exit;
 }
 
-my $ncbiURL
-="http://lims-1.hgsc.bcm.tmc.edu/ngenlims/setFlowCellAnalysisStartDate.jsp?";
+#my $ncbiURL="http://lims-1.hgsc.bcm.tmc.edu/ngenlims/setFlowCellAnalysisStartDate.jsp?";
+my $ncbiURL = "http://gen2.hgsc.bcm.tmc.edu/ngenlims/setFlowCellAnalysisStartDate.jsp?";
 my $paraStr = "flowcellBarcode=" . $ARGV[0];
 
 $ncbiURL="$ncbiURL$paraStr";
