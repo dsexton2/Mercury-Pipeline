@@ -43,9 +43,9 @@ class PipelineHelper
        limsFCName.gsub!(/-00/, "-")
     end 
    
-    if limsFCName.match(/-\d00V2/)         #For MiSeq V2
-       limsFCName.gsub!(/00V2/, "00v2")
-    end
+    #if limsFCName.match(/-\d00V2/)         #For MiSeq V2
+    #   limsFCName.gsub!(/00V2/, "00v2")
+    #end                                    #Illumina updated the cartridge IDs to UPPERCASE. No need to change to uppercase here
 
     fcBarcode  = limsFCName + "-" + laneBarcode.to_s
     return fcBarcode

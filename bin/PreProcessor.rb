@@ -120,9 +120,9 @@ class PreProcessor
        limsFCName.gsub!(/-00/, "-")
     end 
 
-    if limsFCName.match(/-\d00V2/)         #For MiSeq V2
-       limsFCName.gsub!(/00V2/, "00v2")
-    end
+    #if limsFCName.match(/-\d00V2/)         #For MiSeq V2
+    #   limsFCName.gsub!(/00V2/, "00v2")
+    #end                                    #Illumina updated the cartridge IDs to UPPERCASE. No need to change to uppercase here
 
     cmd = "java -jar " + PathInfo::LIMS_API_DIR + "/FlowcellPlanDownloader.jar" +
           " " + LimsInfo::LIMS_DB_NAME + " " + limsFCName +
@@ -137,7 +137,7 @@ class PreProcessor
 
     f = File.new(outputFile)
     text = f.read           #Must re-write bottom code.. No test env is setup for MiSeq at this time
-    if text =~ /300-1-/ || text =~ /\d00v2-/ then
+    if text =~ /300-1-/ || text =~ /\d00V2-/ then
        removeMiseqCartridge = File.read(outputFile) 
        replace = removeMiseqCartridge.gsub(/Name="300-1-/, 'Name="1-')
        File.open(outputFile, "w") { |file| file.puts replace }
@@ -145,10 +145,10 @@ class PreProcessor
        replace2 = removeMiseqCartridge.gsub(/ID="300-1-/, 'ID="1-')
        File.open(outputFile, "w") { |file| file.puts replace2 }
        removeMiseqCartridge = File.read(outputFile)
-       replace3 = removeMiseqCartridge.gsub(/ID="\d00v2-1-/, 'ID="1-')
+       replace3 = removeMiseqCartridge.gsub(/ID="\d00V2-1-/, 'ID="1-')
        File.open(outputFile, "w") { |file| file.puts replace3 }
        removeMiseqCartridge = File.read(outputFile)
-       replace4 = removeMiseqCartridge.gsub(/Name="\d00v2-1-/, 'Name="1-')
+       replace4 = removeMiseqCartridge.gsub(/Name="\d00V2-1-/, 'Name="1-')
        File.open(outputFile, "w") { |file| file.puts replace4 }
     end
 
@@ -161,9 +161,9 @@ class PreProcessor
       fcNameForLIMS.gsub!(/-00/, "-")
     end 
 
-    if fcNameForLIMS.match(/-\d00V2/)         #For MiSeq V2
-      fcNameForLIMS.gsub!(/00V2/, "00v2")
-    end
+    #if fcNameForLIMS.match(/-\d00V2/)         #For MiSeq V2
+    #  fcNameForLIMS.gsub!(/00V2/, "00v2")
+    #end                                     #Illumina updated the cartridge IDs to UPPERCASE. No need to change to uppercase here
 
     limsScript = PathInfo::LIMS_API_DIR + "/setFlowCellAnalysisStartDate.pl"
 
@@ -209,9 +209,9 @@ class PreProcessor
         fcBarcode.gsub!(/-00/, "-")
       end 
 
-      if fcBarcode.match(/-\d00V2/)         #For MiSeq V2
-        fcBarcode.gsub!(/00V2/, "00v2")
-      end
+      #if fcBarcode.match(/-\d00V2/)         #For MiSeq V2
+      #  fcBarcode.gsub!(/00V2/, "00v2")
+      #end                                  #Illumina updated the cartridge IDs to UPPERCASE. No need to change to uppercase here
       
       # Remove the lane name from lane barcode
       if laneBC.match(/^\d$/)
